@@ -1,5 +1,6 @@
 package br.com.xkinfo.slc.Service.Impl;
 
+import br.com.xkinfo.slc.DAO.ServiceFactoryDAO;
 import br.com.xkinfo.slc.Model.Condominio;
 import br.com.xkinfo.slc.Model.Usuario;
 import br.com.xkinfo.slc.Service.ICondominioService;
@@ -9,6 +10,7 @@ import javax.swing.JOptionPane;
 
 public class CondominioServiceImpl implements ICondominioService {
 
+   
     @Override
     public void inserirCondominio(String nome, String cnpj, String endereco, String email, Usuario usuarioinclusao) throws Exception {
         Date dataInclusao = new Date();  // obtem a data do sistema
@@ -17,20 +19,16 @@ public class CondominioServiceImpl implements ICondominioService {
         condominio.setCnpj(cnpj);
         condominio.setEndereco(endereco);
         condominio.setEmail(email);
-        condominio.setUsuarioinclusao(usuarioinclusao);
+        //condominio.setUsuarioinclusao(usuarioinclusao);
         condominio.setDatainclusao(dataInclusao);
         
         if (nome.equals(null) || nome == ""){   // valida se o campo nome está preenchido;
             JOptionPane.showMessageDialog(null, "Favor preencher o nome do Condomínio.");
         }else{
             
-            servicef
+            ServiceFactoryDAO.getCondominioDAO().inserirCondominio(condominio);
             
         }
-        
-        
-        
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
