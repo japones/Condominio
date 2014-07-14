@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="SLC"/>
+  <table-filter match-name="UNIDADECONSUMIDORA"/>
+  <table-filter match-name="COMPETENCIAS"/>
+  <table-filter match-name="LEITURAS"/>
+  <table-filter match-name="TIPOSUC"/>
+  <table-filter match-name="ABASTECIMENTOS"/>
+  <table-filter match-name="MEDIDORESUCS"/>
+  <table-filter match-name="REMESSAS"/>
+  <table-filter match-name="CONDOMINIOS"/>
+  <table-filter match-name="USUARIOS"/>
+  <table-filter match-name="TIPOMEDIDORES"/>
+  <table-filter match-name="MANDATOS"/>
+  <table-filter match-name="RETORNO"/>
+  <table-filter match-name="OCORRENCIAS"/>
+  <table-filter match-name="SINDICOS"/>
+  <table-filter match-name="MEDIDORES"/>
+</hibernate-reverse-engineering>

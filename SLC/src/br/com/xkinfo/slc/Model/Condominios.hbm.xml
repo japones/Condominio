@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13/07/2014 22:14:17 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="br.com.xkinfo.slc.Model.Condominios" table="CONDOMINIOS" catalog="SLC">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="nome" type="string">
+            <column name="NOME" length="250" not-null="true" />
+        </property>
+        <property name="cnpj" type="string">
+            <column name="CNPJ" length="20" not-null="true" />
+        </property>
+        <property name="endereco" type="string">
+            <column name="ENDERECO" length="250" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="EMAIL" length="250" />
+        </property>
+        <property name="usuarioinclusao" type="int">
+            <column name="USUARIOINCLUSAO" not-null="true" />
+        </property>
+        <property name="datainclusao" type="date">
+            <column name="DATAINCLUSAO" length="10" not-null="true" />
+        </property>
+        <property name="usuarioalteracao" type="java.lang.Integer">
+            <column name="USUARIOALTERACAO" />
+        </property>
+        <property name="dataalteracao" type="date">
+            <column name="DATAALTERACAO" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13/07/2014 22:14:17 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="br.com.xkinfo.slc.Model.Retorno" table="RETORNO" catalog="SLC">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="ocorrencia" type="int">
+            <column name="OCORRENCIA" not-null="true" />
+        </property>
+        <property name="remessa" type="int">
+            <column name="REMESSA" not-null="true" />
+        </property>
+        <property name="dataleitura" type="date">
+            <column name="DATALEITURA" length="10" not-null="true" />
+        </property>
+        <property name="consumo" type="int">
+            <column name="CONSUMO" not-null="true" />
+        </property>
+        <property name="leitura" type="float">
+            <column name="LEITURA" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="usuarioinclusao" type="int">
+            <column name="USUARIOINCLUSAO" not-null="true" />
+        </property>
+        <property name="datainclusao" type="date">
+            <column name="DATAINCLUSAO" length="10" not-null="true" />
+        </property>
+        <property name="usuarioalteracao" type="java.lang.Integer">
+            <column name="USUARIOALTERACAO" />
+        </property>
+        <property name="dataalteracao" type="date">
+            <column name="DATAALTERACAO" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>
