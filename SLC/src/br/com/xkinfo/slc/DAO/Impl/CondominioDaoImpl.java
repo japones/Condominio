@@ -12,6 +12,7 @@ public class CondominioDaoImpl implements ICondominioDao {
     private final EntityManager entityManager = EntityManagerUtil.getEntityManager();
 
     @Override
+<<<<<<< HEAD
     public void inserirCondominio(Condominio condominio) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
@@ -52,8 +53,23 @@ public class CondominioDaoImpl implements ICondominioDao {
             tx.rollback();
         } finally {
         }
+=======
+    public void inserirCondominio(Condominio condominio) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void alterarCondominio(Condominio condominio) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void deletarCondominio(Condominio condominio) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+>>>>>>> FETCH_HEAD
     }
     @Override
+<<<<<<< HEAD
     public Condominio getCondominio(int id) throws Exception {
          Condominio condominio = null;
         try {
@@ -79,6 +95,19 @@ public class CondominioDaoImpl implements ICondominioDao {
 
     @Override
     public ArrayList<Condominio> getCondominios() throws Exception {
+=======
+    public Condominio getCondominio(int id) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Condominio getCondominio(String nome) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public ArrayList<Condominio> getCondominios() {
+>>>>>>> FETCH_HEAD
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
