@@ -23,7 +23,6 @@ public class Retorno  implements java.io.Serializable {
 
     public Retorno() {
     }
-
 	
     public Retorno(int id, int ocorrencia, int remessa, Date dataleitura, int consumo, float leitura, int usuarioinclusao, Date datainclusao) {
         this.id = id;
@@ -35,6 +34,7 @@ public class Retorno  implements java.io.Serializable {
         this.usuarioinclusao = usuarioinclusao;
         this.datainclusao = datainclusao;
     }
+    
     public Retorno(int id, int ocorrencia, int remessa, Date dataleitura, int consumo, float leitura, int usuarioinclusao, Date datainclusao, Integer usuarioalteracao, Date dataalteracao) {
        this.id = id;
        this.ocorrencia = ocorrencia;
@@ -55,6 +55,7 @@ public class Retorno  implements java.io.Serializable {
     public void setId(int id) {
         this.id = id;
     }
+    
     public int getOcorrencia() {
         return this.ocorrencia;
     }
@@ -62,6 +63,7 @@ public class Retorno  implements java.io.Serializable {
     public void setOcorrencia(int ocorrencia) {
         this.ocorrencia = ocorrencia;
     }
+    
     public int getRemessa() {
         return this.remessa;
     }
@@ -69,6 +71,7 @@ public class Retorno  implements java.io.Serializable {
     public void setRemessa(int remessa) {
         this.remessa = remessa;
     }
+    
     public Date getDataleitura() {
         return this.dataleitura;
     }
@@ -76,6 +79,7 @@ public class Retorno  implements java.io.Serializable {
     public void setDataleitura(Date dataleitura) {
         this.dataleitura = dataleitura;
     }
+    
     public int getConsumo() {
         return this.consumo;
     }
@@ -83,6 +87,7 @@ public class Retorno  implements java.io.Serializable {
     public void setConsumo(int consumo) {
         this.consumo = consumo;
     }
+    
     public float getLeitura() {
         return this.leitura;
     }
@@ -90,6 +95,7 @@ public class Retorno  implements java.io.Serializable {
     public void setLeitura(float leitura) {
         this.leitura = leitura;
     }
+    
     public int getUsuarioinclusao() {
         return this.usuarioinclusao;
     }
@@ -97,6 +103,7 @@ public class Retorno  implements java.io.Serializable {
     public void setUsuarioinclusao(int usuarioinclusao) {
         this.usuarioinclusao = usuarioinclusao;
     }
+    
     public Date getDatainclusao() {
         return this.datainclusao;
     }
@@ -104,6 +111,7 @@ public class Retorno  implements java.io.Serializable {
     public void setDatainclusao(Date datainclusao) {
         this.datainclusao = datainclusao;
     }
+    
     public Integer getUsuarioalteracao() {
         return this.usuarioalteracao;
     }
@@ -111,6 +119,7 @@ public class Retorno  implements java.io.Serializable {
     public void setUsuarioalteracao(Integer usuarioalteracao) {
         this.usuarioalteracao = usuarioalteracao;
     }
+    
     public Date getDataalteracao() {
         return this.dataalteracao;
     }
@@ -118,9 +127,6 @@ public class Retorno  implements java.io.Serializable {
     public void setDataalteracao(Date dataalteracao) {
         this.dataalteracao = dataalteracao;
     }
-
-
-
 
 }
 

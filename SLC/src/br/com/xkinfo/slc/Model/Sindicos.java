@@ -21,7 +21,6 @@ public class Sindicos  implements java.io.Serializable {
 
     public Sindicos() {
     }
-
 	
     public Sindicos(String nome, String cpf, boolean ativo, int usuarioinclusao, Date datainclusao) {
         this.nome = nome;
@@ -30,6 +29,7 @@ public class Sindicos  implements java.io.Serializable {
         this.usuarioinclusao = usuarioinclusao;
         this.datainclusao = datainclusao;
     }
+    
     public Sindicos(String nome, String cpf, boolean ativo, int usuarioinclusao, Date datainclusao, Integer usuarioalteracao, Date dataalteracao) {
        this.nome = nome;
        this.cpf = cpf;
@@ -47,6 +47,7 @@ public class Sindicos  implements java.io.Serializable {
     public void setId(Integer id) {
         this.id = id;
     }
+    
     public String getNome() {
         return this.nome;
     }
@@ -54,6 +55,7 @@ public class Sindicos  implements java.io.Serializable {
     public void setNome(String nome) {
         this.nome = nome;
     }
+    
     public String getCpf() {
         return this.cpf;
     }
@@ -61,6 +63,7 @@ public class Sindicos  implements java.io.Serializable {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
+    
     public boolean isAtivo() {
         return this.ativo;
     }
@@ -68,6 +71,7 @@ public class Sindicos  implements java.io.Serializable {
     public void setAtivo(boolean ativo) {
         this.ativo = ativo;
     }
+    
     public int getUsuarioinclusao() {
         return this.usuarioinclusao;
     }
@@ -75,6 +79,7 @@ public class Sindicos  implements java.io.Serializable {
     public void setUsuarioinclusao(int usuarioinclusao) {
         this.usuarioinclusao = usuarioinclusao;
     }
+    
     public Date getDatainclusao() {
         return this.datainclusao;
     }
@@ -82,6 +87,7 @@ public class Sindicos  implements java.io.Serializable {
     public void setDatainclusao(Date datainclusao) {
         this.datainclusao = datainclusao;
     }
+    
     public Integer getUsuarioalteracao() {
         return this.usuarioalteracao;
     }
@@ -89,6 +95,7 @@ public class Sindicos  implements java.io.Serializable {
     public void setUsuarioalteracao(Integer usuarioalteracao) {
         this.usuarioalteracao = usuarioalteracao;
     }
+    
     public Date getDataalteracao() {
         return this.dataalteracao;
     }
@@ -96,9 +103,6 @@ public class Sindicos  implements java.io.Serializable {
     public void setDataalteracao(Date dataalteracao) {
         this.dataalteracao = dataalteracao;
     }
-
-
-
 
 }
 

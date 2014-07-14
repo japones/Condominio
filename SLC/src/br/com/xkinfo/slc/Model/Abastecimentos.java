@@ -21,7 +21,6 @@ public class Abastecimentos  implements java.io.Serializable {
 
     public Abastecimentos() {
     }
-
 	
     public Abastecimentos(int competencia, Date dataabastecimento, float quantidade, int usuarioinclusao, Date datainclusao) {
         this.competencia = competencia;
@@ -30,6 +29,7 @@ public class Abastecimentos  implements java.io.Serializable {
         this.usuarioinclusao = usuarioinclusao;
         this.datainclusao = datainclusao;
     }
+
     public Abastecimentos(int competencia, Date dataabastecimento, float quantidade, int usuarioinclusao, Date datainclusao, Integer usuarioalteracao, Date dataalteracao) {
        this.competencia = competencia;
        this.dataabastecimento = dataabastecimento;
@@ -47,6 +47,7 @@ public class Abastecimentos  implements java.io.Serializable {
     public void setId(Integer id) {
         this.id = id;
     }
+
     public int getCompetencia() {
         return this.competencia;
     }
@@ -54,6 +55,7 @@ public class Abastecimentos  implements java.io.Serializable {
     public void setCompetencia(int competencia) {
         this.competencia = competencia;
     }
+
     public Date getDataabastecimento() {
         return this.dataabastecimento;
     }
@@ -61,6 +63,7 @@ public class Abastecimentos  implements java.io.Serializable {
     public void setDataabastecimento(Date dataabastecimento) {
         this.dataabastecimento = dataabastecimento;
     }
+
     public float getQuantidade() {
         return this.quantidade;
     }
@@ -68,6 +71,7 @@ public class Abastecimentos  implements java.io.Serializable {
     public void setQuantidade(float quantidade) {
         this.quantidade = quantidade;
     }
+
     public int getUsuarioinclusao() {
         return this.usuarioinclusao;
     }
@@ -75,6 +79,7 @@ public class Abastecimentos  implements java.io.Serializable {
     public void setUsuarioinclusao(int usuarioinclusao) {
         this.usuarioinclusao = usuarioinclusao;
     }
+
     public Date getDatainclusao() {
         return this.datainclusao;
     }
@@ -82,6 +87,7 @@ public class Abastecimentos  implements java.io.Serializable {
     public void setDatainclusao(Date datainclusao) {
         this.datainclusao = datainclusao;
     }
+
     public Integer getUsuarioalteracao() {
         return this.usuarioalteracao;
     }
@@ -89,6 +95,7 @@ public class Abastecimentos  implements java.io.Serializable {
     public void setUsuarioalteracao(Integer usuarioalteracao) {
         this.usuarioalteracao = usuarioalteracao;
     }
+
     public Date getDataalteracao() {
         return this.dataalteracao;
     }
@@ -96,9 +103,6 @@ public class Abastecimentos  implements java.io.Serializable {
     public void setDataalteracao(Date dataalteracao) {
         this.dataalteracao = dataalteracao;
     }
-
-
-
 
 }
 
