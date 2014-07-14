@@ -1,20 +1,20 @@
 package br.com.xkinfo.slc.Service;
 
-import br.com.xkinfo.slc.Model.Usuarios;
+import br.com.xkinfo.slc.Model.Usuario;
 import java.util.ArrayList;
 
 public interface IUsuarioService {
 
-    public void inserirUsuario(Usuarios usuario);
+    public void inserirUsuario(Usuario usuario);
 
-    public void alterarUsuario(Usuarios usuario);
+    public void alterarUsuario(Usuario usuario);
 
-    public void deletarUsuario(Usuarios usuario);
+    public void deletarUsuario(Usuario usuario);
 
-    public Usuarios getUsuario(int id);
+    public Usuario getUsuario(int id);
 
-    public Usuarios getUsuario(String nome);
+    public Usuario getUsuario(String nome);
 
-    public ArrayList<Usuarios> getUsuarios();
+    public ArrayList<Usuario> getUsuarios();
 
 }

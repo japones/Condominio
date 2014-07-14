@@ -1,18 +1,18 @@
 package br.com.xkinfo.slc.DAO;
 
-import br.com.xkinfo.slc.Model.Condominios;
+import br.com.xkinfo.slc.Model.Condominio;
 import java.util.ArrayList;
 
 public interface ICondominioDao {
-    public void inserirCondominio(Condominios condominio);
+    public void inserirCondominio(Condominio condominio);
 
-    public void alterarCondominio(Condominios condominio);
+    public void alterarCondominio(Condominio condominio);
 
-    public void deletarCondominio(Condominios condominio);
+    public void deletarCondominio(Condominio condominio);
 
-    public Condominios getCondominio(int id);
+    public Condominio getCondominio(int id);
 
-    public Condominios getCondominio(String nome);
+    public Condominio getCondominio(String nome);
 
-    public ArrayList<Condominios> getCondominios();
+    public ArrayList<Condominio> getCondominios();
 }
