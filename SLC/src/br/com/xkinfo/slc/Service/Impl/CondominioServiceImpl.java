@@ -23,10 +23,13 @@ public class CondominioServiceImpl implements ICondominioService {
         condominio.setDatainclusao(dataInclusao);
         
         if (nome.equals(null) || nome == ""){   // valida se o campo nome está preenchido;
+            
             JOptionPane.showMessageDialog(null, "Favor preencher o nome do Condomínio.");
-        }else{
+        
+        }else{                                  // se campo preenchido, vai gravar no banco;
             
             ServiceFactoryDAO.getCondominioDAO().inserirCondominio(condominio);
+            JOptionPane.showMessageDialog(null, "Condominio incluído com sucesso!");
             
         }
     }
