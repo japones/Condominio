@@ -22,7 +22,6 @@ public class Medidoresucs  implements java.io.Serializable {
 
     public Medidoresucs() {
     }
-
 	
     public Medidoresucs(int unidadeconsumidora, int medidor, Date datainstalacao, int usuarioinclusao, Date datainclusao) {
         this.unidadeconsumidora = unidadeconsumidora;
@@ -31,6 +30,7 @@ public class Medidoresucs  implements java.io.Serializable {
         this.usuarioinclusao = usuarioinclusao;
         this.datainclusao = datainclusao;
     }
+    
     public Medidoresucs(int unidadeconsumidora, int medidor, Date datainstalacao, Date dataretirada, int usuarioinclusao, Date datainclusao, Integer usuarioalteracao, Date dataalteracao) {
        this.unidadeconsumidora = unidadeconsumidora;
        this.medidor = medidor;
@@ -49,6 +49,7 @@ public class Medidoresucs  implements java.io.Serializable {
     public void setId(Integer id) {
         this.id = id;
     }
+    
     public int getUnidadeconsumidora() {
         return this.unidadeconsumidora;
     }
@@ -56,6 +57,7 @@ public class Medidoresucs  implements java.io.Serializable {
     public void setUnidadeconsumidora(int unidadeconsumidora) {
         this.unidadeconsumidora = unidadeconsumidora;
     }
+    
     public int getMedidor() {
         return this.medidor;
     }
@@ -63,6 +65,7 @@ public class Medidoresucs  implements java.io.Serializable {
     public void setMedidor(int medidor) {
         this.medidor = medidor;
     }
+    
     public Date getDatainstalacao() {
         return this.datainstalacao;
     }
@@ -70,6 +73,7 @@ public class Medidoresucs  implements java.io.Serializable {
     public void setDatainstalacao(Date datainstalacao) {
         this.datainstalacao = datainstalacao;
     }
+    
     public Date getDataretirada() {
         return this.dataretirada;
     }
@@ -77,6 +81,7 @@ public class Medidoresucs  implements java.io.Serializable {
     public void setDataretirada(Date dataretirada) {
         this.dataretirada = dataretirada;
     }
+    
     public int getUsuarioinclusao() {
         return this.usuarioinclusao;
     }
@@ -84,6 +89,7 @@ public class Medidoresucs  implements java.io.Serializable {
     public void setUsuarioinclusao(int usuarioinclusao) {
         this.usuarioinclusao = usuarioinclusao;
     }
+    
     public Date getDatainclusao() {
         return this.datainclusao;
     }
@@ -91,6 +97,7 @@ public class Medidoresucs  implements java.io.Serializable {
     public void setDatainclusao(Date datainclusao) {
         this.datainclusao = datainclusao;
     }
+    
     public Integer getUsuarioalteracao() {
         return this.usuarioalteracao;
     }
@@ -98,6 +105,7 @@ public class Medidoresucs  implements java.io.Serializable {
     public void setUsuarioalteracao(Integer usuarioalteracao) {
         this.usuarioalteracao = usuarioalteracao;
     }
+    
     public Date getDataalteracao() {
         return this.dataalteracao;
     }
@@ -105,9 +113,6 @@ public class Medidoresucs  implements java.io.Serializable {
     public void setDataalteracao(Date dataalteracao) {
         this.dataalteracao = dataalteracao;
     }
-
-
-
 
 }
 

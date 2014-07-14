@@ -19,13 +19,13 @@ public class Tipomedidores  implements java.io.Serializable {
 
     public Tipomedidores() {
     }
-
 	
     public Tipomedidores(String descricao, int usuarioinclusao, Date datainclusao) {
         this.descricao = descricao;
         this.usuarioinclusao = usuarioinclusao;
         this.datainclusao = datainclusao;
     }
+    
     public Tipomedidores(String descricao, int usuarioinclusao, Date datainclusao, Integer usuarioalteracao, Date dataalteracao) {
        this.descricao = descricao;
        this.usuarioinclusao = usuarioinclusao;
@@ -41,6 +41,7 @@ public class Tipomedidores  implements java.io.Serializable {
     public void setId(Integer id) {
         this.id = id;
     }
+    
     public String getDescricao() {
         return this.descricao;
     }
@@ -48,6 +49,7 @@ public class Tipomedidores  implements java.io.Serializable {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+    
     public int getUsuarioinclusao() {
         return this.usuarioinclusao;
     }
@@ -55,6 +57,7 @@ public class Tipomedidores  implements java.io.Serializable {
     public void setUsuarioinclusao(int usuarioinclusao) {
         this.usuarioinclusao = usuarioinclusao;
     }
+    
     public Date getDatainclusao() {
         return this.datainclusao;
     }
@@ -62,6 +65,7 @@ public class Tipomedidores  implements java.io.Serializable {
     public void setDatainclusao(Date datainclusao) {
         this.datainclusao = datainclusao;
     }
+    
     public Integer getUsuarioalteracao() {
         return this.usuarioalteracao;
     }
@@ -69,6 +73,7 @@ public class Tipomedidores  implements java.io.Serializable {
     public void setUsuarioalteracao(Integer usuarioalteracao) {
         this.usuarioalteracao = usuarioalteracao;
     }
+    
     public Date getDataalteracao() {
         return this.dataalteracao;
     }
@@ -76,9 +81,6 @@ public class Tipomedidores  implements java.io.Serializable {
     public void setDataalteracao(Date dataalteracao) {
         this.dataalteracao = dataalteracao;
     }
-
-
-
 
 }
 

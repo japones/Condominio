@@ -21,7 +21,6 @@ public class Competencias  implements java.io.Serializable {
 
     public Competencias() {
     }
-
 	
     public Competencias(int condominio, Date competencia, boolean situacao, int usuarioinclusao, Date datainclusao) {
         this.condominio = condominio;
@@ -30,6 +29,7 @@ public class Competencias  implements java.io.Serializable {
         this.usuarioinclusao = usuarioinclusao;
         this.datainclusao = datainclusao;
     }
+
     public Competencias(int condominio, Date competencia, boolean situacao, int usuarioinclusao, Date datainclusao, Integer usuarioalteracao, Date dataalteracao) {
        this.condominio = condominio;
        this.competencia = competencia;
@@ -47,6 +47,7 @@ public class Competencias  implements java.io.Serializable {
     public void setId(Integer id) {
         this.id = id;
     }
+
     public int getCondominio() {
         return this.condominio;
     }
@@ -54,6 +55,7 @@ public class Competencias  implements java.io.Serializable {
     public void setCondominio(int condominio) {
         this.condominio = condominio;
     }
+
     public Date getCompetencia() {
         return this.competencia;
     }
@@ -61,6 +63,7 @@ public class Competencias  implements java.io.Serializable {
     public void setCompetencia(Date competencia) {
         this.competencia = competencia;
     }
+
     public boolean isSituacao() {
         return this.situacao;
     }
@@ -68,6 +71,7 @@ public class Competencias  implements java.io.Serializable {
     public void setSituacao(boolean situacao) {
         this.situacao = situacao;
     }
+
     public int getUsuarioinclusao() {
         return this.usuarioinclusao;
     }
@@ -75,6 +79,7 @@ public class Competencias  implements java.io.Serializable {
     public void setUsuarioinclusao(int usuarioinclusao) {
         this.usuarioinclusao = usuarioinclusao;
     }
+
     public Date getDatainclusao() {
         return this.datainclusao;
     }
@@ -82,6 +87,7 @@ public class Competencias  implements java.io.Serializable {
     public void setDatainclusao(Date datainclusao) {
         this.datainclusao = datainclusao;
     }
+
     public Integer getUsuarioalteracao() {
         return this.usuarioalteracao;
     }
@@ -89,6 +95,7 @@ public class Competencias  implements java.io.Serializable {
     public void setUsuarioalteracao(Integer usuarioalteracao) {
         this.usuarioalteracao = usuarioalteracao;
     }
+
     public Date getDataalteracao() {
         return this.dataalteracao;
     }
@@ -96,9 +103,6 @@ public class Competencias  implements java.io.Serializable {
     public void setDataalteracao(Date dataalteracao) {
         this.dataalteracao = dataalteracao;
     }
-
-
-
 
 }
 

@@ -1,20 +1,22 @@
 package br.com.xkinfo.slc.Service;
 
-import br.com.xkinfo.slc.Model.Condominios;
+import br.com.xkinfo.slc.Model.Condominio;
+import br.com.xkinfo.slc.Model.Usuario;
 import java.util.ArrayList;
+import java.util.Date;
 
 public interface ICondominioService {
 
-    public void inserirCondominio(Condominios condominio);
+    public void inserirCondominio(String nome, String cnpj, String endereco, String email, Usuario usuarioinclusao) throws Exception;
 
-    public void alterarCondominio(Condominios condominio);
+    public void alterarCondominio(int id, String nome, String cnpj, String endereco, String email, Usuario usuarioalteracao) throws Exception;
 
-    public void deletarCondominio(Condominios condominio);
+    public void deletarCondominio(int id) throws Exception;
 
-    public Condominios getCondominio(int id);
+    public Condominio getCondominio(int id) throws Exception;
 
-    public Condominios getCondominio(String nome);
+    public Condominio getCondominio(String nome) throws Exception;
 
-    public ArrayList<Condominios> getCondominios();
+    public ArrayList<Condominio> getCondominios() throws Exception;
 
 }

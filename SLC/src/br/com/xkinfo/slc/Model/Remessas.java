@@ -22,7 +22,6 @@ public class Remessas  implements java.io.Serializable {
 
     public Remessas() {
     }
-
 	
     public Remessas(int unidadeconsumidora, float remessasanterior, Date dataleituraanterior, int consumo, int usuarioinclusao, Date datainclusao) {
         this.unidadeconsumidora = unidadeconsumidora;
@@ -32,6 +31,7 @@ public class Remessas  implements java.io.Serializable {
         this.usuarioinclusao = usuarioinclusao;
         this.datainclusao = datainclusao;
     }
+    
     public Remessas(int unidadeconsumidora, float remessasanterior, Date dataleituraanterior, int consumo, int usuarioinclusao, Date datainclusao, Integer usuarioalteracao, Date dataalteracao) {
        this.unidadeconsumidora = unidadeconsumidora;
        this.remessasanterior = remessasanterior;
@@ -50,6 +50,7 @@ public class Remessas  implements java.io.Serializable {
     public void setId(Integer id) {
         this.id = id;
     }
+    
     public int getUnidadeconsumidora() {
         return this.unidadeconsumidora;
     }
@@ -57,6 +58,7 @@ public class Remessas  implements java.io.Serializable {
     public void setUnidadeconsumidora(int unidadeconsumidora) {
         this.unidadeconsumidora = unidadeconsumidora;
     }
+    
     public float getRemessasanterior() {
         return this.remessasanterior;
     }
@@ -64,6 +66,7 @@ public class Remessas  implements java.io.Serializable {
     public void setRemessasanterior(float remessasanterior) {
         this.remessasanterior = remessasanterior;
     }
+    
     public Date getDataleituraanterior() {
         return this.dataleituraanterior;
     }
@@ -71,6 +74,7 @@ public class Remessas  implements java.io.Serializable {
     public void setDataleituraanterior(Date dataleituraanterior) {
         this.dataleituraanterior = dataleituraanterior;
     }
+    
     public int getConsumo() {
         return this.consumo;
     }
@@ -78,6 +82,7 @@ public class Remessas  implements java.io.Serializable {
     public void setConsumo(int consumo) {
         this.consumo = consumo;
     }
+    
     public int getUsuarioinclusao() {
         return this.usuarioinclusao;
     }
@@ -92,6 +97,7 @@ public class Remessas  implements java.io.Serializable {
     public void setDatainclusao(Date datainclusao) {
         this.datainclusao = datainclusao;
     }
+    
     public Integer getUsuarioalteracao() {
         return this.usuarioalteracao;
     }
@@ -99,6 +105,7 @@ public class Remessas  implements java.io.Serializable {
     public void setUsuarioalteracao(Integer usuarioalteracao) {
         this.usuarioalteracao = usuarioalteracao;
     }
+    
     public Date getDataalteracao() {
         return this.dataalteracao;
     }
@@ -106,9 +113,6 @@ public class Remessas  implements java.io.Serializable {
     public void setDataalteracao(Date dataalteracao) {
         this.dataalteracao = dataalteracao;
     }
-
-
-
 
 }
 

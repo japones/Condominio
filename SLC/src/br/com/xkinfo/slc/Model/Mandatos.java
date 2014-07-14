@@ -23,7 +23,6 @@ public class Mandatos  implements java.io.Serializable {
     public Mandatos() {
     }
 
-	
     public Mandatos(int id, int sindico, int condominio, Date mandatoinicio, Date mandatofim, int usuarioinclusao, Date datainclusao) {
         this.id = id;
         this.sindico = sindico;
@@ -33,6 +32,7 @@ public class Mandatos  implements java.io.Serializable {
         this.usuarioinclusao = usuarioinclusao;
         this.datainclusao = datainclusao;
     }
+    
     public Mandatos(int id, int sindico, int condominio, Date mandatoinicio, Date mandatofim, int usuarioinclusao, Date datainclusao, Integer usuarioalteracao, Date dataalteracao) {
        this.id = id;
        this.sindico = sindico;
@@ -52,6 +52,7 @@ public class Mandatos  implements java.io.Serializable {
     public void setId(int id) {
         this.id = id;
     }
+    
     public int getSindico() {
         return this.sindico;
     }
@@ -59,6 +60,7 @@ public class Mandatos  implements java.io.Serializable {
     public void setSindico(int sindico) {
         this.sindico = sindico;
     }
+    
     public int getCondominio() {
         return this.condominio;
     }
@@ -66,6 +68,7 @@ public class Mandatos  implements java.io.Serializable {
     public void setCondominio(int condominio) {
         this.condominio = condominio;
     }
+    
     public Date getMandatoinicio() {
         return this.mandatoinicio;
     }
@@ -73,6 +76,7 @@ public class Mandatos  implements java.io.Serializable {
     public void setMandatoinicio(Date mandatoinicio) {
         this.mandatoinicio = mandatoinicio;
     }
+    
     public Date getMandatofim() {
         return this.mandatofim;
     }
@@ -80,6 +84,7 @@ public class Mandatos  implements java.io.Serializable {
     public void setMandatofim(Date mandatofim) {
         this.mandatofim = mandatofim;
     }
+    
     public int getUsuarioinclusao() {
         return this.usuarioinclusao;
     }
@@ -87,6 +92,7 @@ public class Mandatos  implements java.io.Serializable {
     public void setUsuarioinclusao(int usuarioinclusao) {
         this.usuarioinclusao = usuarioinclusao;
     }
+    
     public Date getDatainclusao() {
         return this.datainclusao;
     }
@@ -94,6 +100,7 @@ public class Mandatos  implements java.io.Serializable {
     public void setDatainclusao(Date datainclusao) {
         this.datainclusao = datainclusao;
     }
+    
     public Integer getUsuarioalteracao() {
         return this.usuarioalteracao;
     }
@@ -101,6 +108,7 @@ public class Mandatos  implements java.io.Serializable {
     public void setUsuarioalteracao(Integer usuarioalteracao) {
         this.usuarioalteracao = usuarioalteracao;
     }
+    
     public Date getDataalteracao() {
         return this.dataalteracao;
     }
@@ -108,9 +116,6 @@ public class Mandatos  implements java.io.Serializable {
     public void setDataalteracao(Date dataalteracao) {
         this.dataalteracao = dataalteracao;
     }
-
-
-
 
 }
 

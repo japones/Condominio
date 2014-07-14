@@ -19,13 +19,13 @@ public class Ocorrencias  implements java.io.Serializable {
 
     public Ocorrencias() {
     }
-
 	
     public Ocorrencias(String descricao, int usuarioinclusao, Date dateinclusao) {
         this.descricao = descricao;
         this.usuarioinclusao = usuarioinclusao;
         this.dateinclusao = dateinclusao;
     }
+    
     public Ocorrencias(String descricao, int usuarioinclusao, Date dateinclusao, Integer usuarioalteracao, Date dataalteracao) {
        this.descricao = descricao;
        this.usuarioinclusao = usuarioinclusao;
@@ -41,6 +41,7 @@ public class Ocorrencias  implements java.io.Serializable {
     public void setId(Integer id) {
         this.id = id;
     }
+    
     public String getDescricao() {
         return this.descricao;
     }
@@ -48,6 +49,7 @@ public class Ocorrencias  implements java.io.Serializable {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+    
     public int getUsuarioinclusao() {
         return this.usuarioinclusao;
     }
@@ -55,6 +57,7 @@ public class Ocorrencias  implements java.io.Serializable {
     public void setUsuarioinclusao(int usuarioinclusao) {
         this.usuarioinclusao = usuarioinclusao;
     }
+    
     public Date getDateinclusao() {
         return this.dateinclusao;
     }
@@ -62,6 +65,7 @@ public class Ocorrencias  implements java.io.Serializable {
     public void setDateinclusao(Date dateinclusao) {
         this.dateinclusao = dateinclusao;
     }
+    
     public Integer getUsuarioalteracao() {
         return this.usuarioalteracao;
     }
@@ -69,6 +73,7 @@ public class Ocorrencias  implements java.io.Serializable {
     public void setUsuarioalteracao(Integer usuarioalteracao) {
         this.usuarioalteracao = usuarioalteracao;
     }
+    
     public Date getDataalteracao() {
         return this.dataalteracao;
     }
@@ -76,9 +81,6 @@ public class Ocorrencias  implements java.io.Serializable {
     public void setDataalteracao(Date dataalteracao) {
         this.dataalteracao = dataalteracao;
     }
-
-
-
 
 }
 

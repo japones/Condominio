@@ -1,7 +1,6 @@
 package br.com.xkinfo.slc.DAO.Impl;
 
 import br.com.xkinfo.slc.DAO.ICompetenciaDao;
-import br.com.xkinfo.slc.Model.Abastecimentos;
 import br.com.xkinfo.slc.Model.Competencias;
 import br.com.xkinfo.slc.Util.EntityManagerUtil;
 import java.util.ArrayList;

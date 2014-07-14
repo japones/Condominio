@@ -1,8 +1,7 @@
 package br.com.xkinfo.slc.DAO.Impl;
 
 import br.com.xkinfo.slc.DAO.ICondominioDao;
-import br.com.xkinfo.slc.Model.Competencias;
-import br.com.xkinfo.slc.Model.Condominios;
+import br.com.xkinfo.slc.Model.Condominio;
 import br.com.xkinfo.slc.Util.EntityManagerUtil;
 import java.util.ArrayList;
 import javax.persistence.EntityManager;
@@ -13,7 +12,7 @@ public class CondominioDaoImpl implements ICondominioDao {
     private final EntityManager entityManager = EntityManagerUtil.getEntityManager();
 
     @Override
-    public void inserirCondominio(Condominios condominio) throws Exception {
+    public void inserirCondominio(Condominio condominio) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -24,10 +23,11 @@ public class CondominioDaoImpl implements ICondominioDao {
             tx.rollback();
         } finally {
         }
+
     }
 
     @Override
-    public void alterarCondominio(Condominios condominio) throws Exception {
+    public void alterarCondominio(Condominio condominio) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -41,7 +41,7 @@ public class CondominioDaoImpl implements ICondominioDao {
     }
 
     @Override
-    public void deletarCondominio(Condominios condominio) throws Exception {
+    public void deletarCondominio(Condominio condominio) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -53,12 +53,11 @@ public class CondominioDaoImpl implements ICondominioDao {
         } finally {
         }
     }
-
     @Override
-    public Condominios getCondominio(int id) throws Exception {
-        Condominios condominio = null;
+    public Condominio getCondominio(int id) throws Exception {
+         Condominio condominio = null;
         try {
-            condominio = entityManager.find(Condominios.class, id);
+            condominio = entityManager.find(Condominio.class, id);
         } catch (Exception e) {
             // TODO: handle exception
             e.printStackTrace();
@@ -67,10 +66,10 @@ public class CondominioDaoImpl implements ICondominioDao {
     }
 
     @Override
-    public Condominios getCondominio(String nome) throws Exception {
-        Condominios condominio = null;
+    public Condominio getCondominio(String nome) throws Exception {
+        Condominio condominio = null;
         try {
-            condominio = entityManager.find(Condominios.class, nome);
+            condominio = entityManager.find(Condominio.class, nome);
         } catch (Exception e) {
             // TODO: handle exception
             e.printStackTrace();
@@ -79,7 +78,7 @@ public class CondominioDaoImpl implements ICondominioDao {
     }
 
     @Override
-    public ArrayList<Condominios> getCondominios() throws Exception {
+    public ArrayList<Condominio> getCondominios() throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
