@@ -5,15 +5,15 @@ import java.util.ArrayList;
 
 public interface IRetornoDao {
 
-    public void inserirRetorno(Retorno retorno);
+    public void inserirRetorno(Retorno retorno)throws Exception;
 
-    public void alterarRetorno(Retorno retorno);
+    public void alterarRetorno(Retorno retorno)throws Exception;
 
-    public void deletarRetorno(Retorno retorno);
+    public void deletarRetorno(Retorno retorno)throws Exception;
 
-    public Retorno getRetorno(int id);
+    public Retorno getRetorno(int id)throws Exception;
 
-    public Retorno getRetorno(String nome);
+    public Retorno getRetorno(String nome)throws Exception;
 
-    public ArrayList<Retorno> getRetornos();
+    public ArrayList<Retorno> getRetornos()throws Exception;
 }

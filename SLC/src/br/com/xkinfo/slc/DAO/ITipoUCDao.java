@@ -5,15 +5,15 @@ import java.util.ArrayList;
 
 public interface ITipoUCDao {
 
-    public void inserirTipoUC(Tiposuc tipoUC);
+    public void inserirTipoUC(Tiposuc tipoUC)throws Exception;
 
-    public void alterarTipoUC(Tiposuc tipoUC);
+    public void alterarTipoUC(Tiposuc tipoUC)throws Exception;
 
-    public void deletarTipoUC(Tiposuc tipoUC);
+    public void deletarTipoUC(Tiposuc tipoUC)throws Exception;
 
-    public Tiposuc getTipoUC(int id);
+    public Tiposuc getTipoUC(int id)throws Exception;
 
-    public Tiposuc getTipoUC(String nome);
+    public Tiposuc getTipoUC(String nome)throws Exception;
 
-    public ArrayList<Tiposuc> getTiposUC();
+    public ArrayList<Tiposuc> getTiposUC()throws Exception;
 }

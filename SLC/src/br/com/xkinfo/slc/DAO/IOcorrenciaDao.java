@@ -5,15 +5,15 @@ import java.util.ArrayList;
 
 public interface IOcorrenciaDao {
 
-    public void inserirOcorrencia(Ocorrencias ocorrencia);
+    public void inserirOcorrencia(Ocorrencias ocorrencia)throws Exception;
 
-    public void alterarOcorrencia(Ocorrencias ocorrencia);
+    public void alterarOcorrencia(Ocorrencias ocorrencia)throws Exception;
 
-    public void deletarOcorrencia(Ocorrencias ocorrencia);
+    public void deletarOcorrencia(Ocorrencias ocorrencia)throws Exception;
 
-    public Ocorrencias getOcorrencia(int id);
+    public Ocorrencias getOcorrencia(int id)throws Exception;
 
-    public Ocorrencias getOcorrencia(String nome);
+    public Ocorrencias getOcorrencia(String nome)throws Exception;
 
-    public ArrayList<Ocorrencias> getOcorrencias();
+    public ArrayList<Ocorrencias> getOcorrencias()throws Exception;
 }

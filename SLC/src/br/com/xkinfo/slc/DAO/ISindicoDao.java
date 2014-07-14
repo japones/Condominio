@@ -5,15 +5,15 @@ import java.util.ArrayList;
 
 public interface ISindicoDao {
 
-    public void inserirSindico(Sindicos sindico);
+    public void inserirSindico(Sindicos sindico)throws Exception;
 
-    public void alterarSindico(Sindicos sindico);
+    public void alterarSindico(Sindicos sindico)throws Exception;
 
-    public void deletarSindico(Sindicos sindico);
+    public void deletarSindico(Sindicos sindico)throws Exception;
 
-    public Sindicos getSindico(int id);
+    public Sindicos getSindico(int id)throws Exception;
 
-    public Sindicos getSindico(String nome);
+    public Sindicos getSindico(String nome)throws Exception;
 
-    public ArrayList<Sindicos> getSindicos();
+    public ArrayList<Sindicos> getSindicos()throws Exception;
 }

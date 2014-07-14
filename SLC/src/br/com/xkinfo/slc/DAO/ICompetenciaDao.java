@@ -5,15 +5,15 @@ import java.util.ArrayList;
 
 public interface ICompetenciaDao {
 
-    public void inserirCompetencia(Competencias competencia);
+    public void inserirCompetencia(Competencias competencia)throws Exception;
 
-    public void alterarCompetencia(Competencias competencia);
+    public void alterarCompetencia(Competencias competencia)throws Exception;
 
-    public void deletarCompetencia(Competencias competencia);
+    public void deletarCompetencia(Competencias competencia)throws Exception;
 
-    public Competencias getCompetencia(int id);
+    public Competencias getCompetencia(int id)throws Exception;
 
-    public Competencias getCompetencia(String nome);
+    public Competencias getCompetencia(String nome)throws Exception;
 
-    public ArrayList<Competencias> getCompetencias();
+    public ArrayList<Competencias> getCompetencias()throws Exception;
 }

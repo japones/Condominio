@@ -5,15 +5,15 @@ import java.util.ArrayList;
 
 public interface IMandatoDao {
 
-    public void inserirMandato(Mandatos mandato);
+    public void inserirMandato(Mandatos mandato)throws Exception;
 
-    public void alterarMandato(Mandatos mandato);
+    public void alterarMandato(Mandatos mandato)throws Exception;
 
-    public void deletarMandato(Mandatos mandato);
+    public void deletarMandato(Mandatos mandato)throws Exception;
 
-    public Mandatos getMandato(int id);
+    public Mandatos getMandato(int id)throws Exception;
 
-    public Mandatos getMandato(String nome);
+    public Mandatos getMandato(String nome)throws Exception;
 
-    public ArrayList<Mandatos> getMandatos();
+    public ArrayList<Mandatos> getMandatos()throws Exception;
 }

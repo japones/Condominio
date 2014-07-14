@@ -5,15 +5,15 @@ import java.util.ArrayList;
 
 public interface ILeituraDao {
 
-    public void inserirLeitura(Leituras leitura);
+    public void inserirLeitura(Leituras leitura)throws Exception;
 
-    public void alterarLeitura(Leituras leitura);
+    public void alterarLeitura(Leituras leitura)throws Exception;
 
-    public void deletarLeitura(Leituras leitura);
+    public void deletarLeitura(Leituras leitura)throws Exception;
 
-    public Leituras getLeitura(int id);
+    public Leituras getLeitura(int id)throws Exception;
 
-    public Leituras getLeitura(String nome);
+    public Leituras getLeitura(String nome)throws Exception;
 
-    public ArrayList<Leituras> getLeituras();
+    public ArrayList<Leituras> getLeituras()throws Exception;
 }

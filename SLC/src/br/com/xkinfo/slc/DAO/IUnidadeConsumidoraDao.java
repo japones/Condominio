@@ -5,16 +5,16 @@ import java.util.ArrayList;
 
 public interface IUnidadeConsumidoraDao {
 
-    public void inserirUnidadeConsumidora(Unidadeconsumidora unidadeConsumidora);
+    public void inserirUnidadeConsumidora(Unidadeconsumidora unidadeConsumidora)throws Exception;
 
-    public void alterarUnidadeConsumidora(Unidadeconsumidora unidadeConsumidora);
+    public void alterarUnidadeConsumidora(Unidadeconsumidora unidadeConsumidora)throws Exception;
 
-    public void deletarUnidadeConsumidora(Unidadeconsumidora unidadeConsumidora);
+    public void deletarUnidadeConsumidora(Unidadeconsumidora unidadeConsumidora)throws Exception;
 
-    public Unidadeconsumidora getUnidadeConsumidora(int id);
+    public Unidadeconsumidora getUnidadeConsumidora(int id)throws Exception;
 
-    public Unidadeconsumidora getUnidadeConsumidora(String nome);
+    public Unidadeconsumidora getUnidadeConsumidora(String nome)throws Exception;
 
-    public ArrayList<Unidadeconsumidora> getUnidadesConsumidoras();
+    public ArrayList<Unidadeconsumidora> getUnidadesConsumidoras()throws Exception;
 
 }

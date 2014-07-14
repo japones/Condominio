@@ -5,15 +5,15 @@ import java.util.ArrayList;
 
 public interface IMedidorDao {
 
-    public void inserirMedidor(Medidores medidor);
+    public void inserirMedidor(Medidores medidor)throws Exception;
 
-    public void alterarMedidor(Medidores medidor);
+    public void alterarMedidor(Medidores medidor)throws Exception;
 
-    public void deletarMedidor(Medidores medidor);
+    public void deletarMedidor(Medidores medidor)throws Exception;
 
-    public Medidores getMedidor(int id);
+    public Medidores getMedidor(int id)throws Exception;
 
-    public Medidores getMedidor(String nome);
+    public Medidores getMedidor(String nome)throws Exception;
 
-    public ArrayList<Medidores> getMedidores();
+    public ArrayList<Medidores> getMedidores()throws Exception;
 }

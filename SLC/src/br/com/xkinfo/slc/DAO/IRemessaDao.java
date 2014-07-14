@@ -5,15 +5,15 @@ import java.util.ArrayList;
 
 public interface IRemessaDao {
 
-    public void inserirRemessa(Remessas remessa);
+    public void inserirRemessa(Remessas remessa)throws Exception;
 
-    public void alterarRemessa(Remessas remessa);
+    public void alterarRemessa(Remessas remessa)throws Exception;
 
-    public void deletarRemessa(Remessas remessa);
+    public void deletarRemessa(Remessas remessa)throws Exception;
 
-    public Remessas getRemessa(int id);
+    public Remessas getRemessa(int id)throws Exception;
 
-    public Remessas getRemessa(String nome);
+    public Remessas getRemessa(String nome)throws Exception;
 
-    public ArrayList<Remessas> getRemessas();
+    public ArrayList<Remessas> getRemessas()throws Exception;
 }
