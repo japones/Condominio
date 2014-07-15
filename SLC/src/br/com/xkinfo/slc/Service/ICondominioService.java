@@ -3,7 +3,6 @@ package br.com.xkinfo.slc.Service;
 import br.com.xkinfo.slc.Model.Condominio;
 import br.com.xkinfo.slc.Model.Usuario;
 import java.util.ArrayList;
-import java.util.Date;
 
 public interface ICondominioService {
 
