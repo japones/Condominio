@@ -11,8 +11,8 @@ public class Retorno  implements java.io.Serializable {
 
 
      private int id;
-     private int ocorrencia;
-     private int remessa;
+     private Ocorrencia ocorrencia;
+     private Remessa remessa;
      private Date dataleitura;
      private int consumo;
      private float leitura;
@@ -24,7 +24,7 @@ public class Retorno  implements java.io.Serializable {
     public Retorno() {
     }
 	
-    public Retorno(int id, int ocorrencia, int remessa, Date dataleitura, int consumo, float leitura, Usuario usuarioinclusao, Date datainclusao) {
+    public Retorno(int id, Ocorrencia ocorrencia, Remessa remessa, Date dataleitura, int consumo, float leitura, Usuario usuarioinclusao, Date datainclusao) {
         this.id = id;
         this.ocorrencia = ocorrencia;
         this.remessa = remessa;
@@ -35,7 +35,7 @@ public class Retorno  implements java.io.Serializable {
         this.datainclusao = datainclusao;
     }
     
-    public Retorno(int id, int ocorrencia, int remessa, Date dataleitura, int consumo, float leitura, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
+    public Retorno(int id, Ocorrencia ocorrencia, Remessa remessa, Date dataleitura, int consumo, float leitura, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
        this.id = id;
        this.ocorrencia = ocorrencia;
        this.remessa = remessa;
@@ -56,19 +56,19 @@ public class Retorno  implements java.io.Serializable {
         this.id = id;
     }
     
-    public int getOcorrencia() {
+    public Ocorrencia getOcorrencia() {
         return this.ocorrencia;
     }
     
-    public void setOcorrencia(int ocorrencia) {
+    public void setOcorrencia(Ocorrencia ocorrencia) {
         this.ocorrencia = ocorrencia;
     }
     
-    public int getRemessa() {
+    public Remessa getRemessa() {
         return this.remessa;
     }
     
-    public void setRemessa(int remessa) {
+    public void setRemessa(Remessa remessa) {
         this.remessa = remessa;
     }
     
