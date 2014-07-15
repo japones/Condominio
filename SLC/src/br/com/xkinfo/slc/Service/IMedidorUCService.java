@@ -1,20 +1,20 @@
 package br.com.xkinfo.slc.Service;
 
-import br.com.xkinfo.slc.Model.Medidoresucs;
+import br.com.xkinfo.slc.Model.Medidoruc;
 import java.util.ArrayList;
 
 public interface IMedidorUCService {
 
-    public void inserirMedidorUC(Medidoresucs medidorUC);
+    public void inserirMedidorUC(Medidoruc medidorUC);
 
-    public void alterarMedidorUC(Medidoresucs medidorUC);
+    public void alterarMedidorUC(Medidoruc medidorUC);
 
-    public void deletarMedidorUC(Medidoresucs medidorUC);
+    public void deletarMedidorUC(Medidoruc medidorUC);
 
-    public Medidoresucs getMedidorUC(int id);
+    public Medidoruc getMedidorUC(int id);
 
-    public Medidoresucs getMedidorUC(String nome);
+    public Medidoruc getMedidorUC(String nome);
 
-    public ArrayList<Medidoresucs> getMedidoresUC();
+    public ArrayList<Medidoruc> getMedidoresUC();
 
 }

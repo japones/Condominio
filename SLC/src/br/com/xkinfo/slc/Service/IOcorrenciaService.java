@@ -1,20 +1,20 @@
 package br.com.xkinfo.slc.Service;
 
-import br.com.xkinfo.slc.Model.Ocorrencias;
+import br.com.xkinfo.slc.Model.Ocorrencia;
 import java.util.ArrayList;
 
 public interface IOcorrenciaService {
 
-    public void inserirOcorrencia(Ocorrencias ocorrencia);
+    public void inserirOcorrencia(Ocorrencia ocorrencia);
 
-    public void alterarOcorrencia(Ocorrencias ocorrencia);
+    public void alterarOcorrencia(Ocorrencia ocorrencia);
 
-    public void deletarOcorrencia(Ocorrencias ocorrencia);
+    public void deletarOcorrencia(Ocorrencia ocorrencia);
 
-    public Ocorrencias getOcorrencia(int id);
+    public Ocorrencia getOcorrencia(int id);
 
-    public Ocorrencias getOcorrencia(String nome);
+    public Ocorrencia getOcorrencia(String nome);
 
-    public ArrayList<Ocorrencias> getOcorrencias();
+    public ArrayList<Ocorrencia> getOcorrencias();
 
 }

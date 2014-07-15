@@ -1,19 +1,19 @@
 package br.com.xkinfo.slc.DAO;
 
-import br.com.xkinfo.slc.Model.Remessas;
+import br.com.xkinfo.slc.Model.Remessa;
 import java.util.ArrayList;
 
 public interface IRemessaDao {
 
-    public void inserirRemessa(Remessas remessa)throws Exception;
+    public void inserirRemessa(Remessa remessa)throws Exception;
 
-    public void alterarRemessa(Remessas remessa)throws Exception;
+    public void alterarRemessa(Remessa remessa)throws Exception;
 
-    public void deletarRemessa(Remessas remessa)throws Exception;
+    public void deletarRemessa(Remessa remessa)throws Exception;
 
-    public Remessas getRemessa(int id)throws Exception;
+    public Remessa getRemessa(int id)throws Exception;
 
-    public Remessas getRemessa(String nome)throws Exception;
+    public Remessa getRemessa(String nome)throws Exception;
 
-    public ArrayList<Remessas> getRemessas()throws Exception;
+    public ArrayList<Remessa> getRemessas()throws Exception;
 }

@@ -1,20 +1,20 @@
 package br.com.xkinfo.slc.Service;
 
-import br.com.xkinfo.slc.Model.Remessas;
+import br.com.xkinfo.slc.Model.Remessa;
 import java.util.ArrayList;
 
 public interface IRemessaService {
 
-    public void inserirRemessa(Remessas remessa);
+    public void inserirRemessa(Remessa remessa);
 
-    public void alterarRemessa(Remessas remessa);
+    public void alterarRemessa(Remessa remessa);
 
-    public void deletarRemessa(Remessas remessa);
+    public void deletarRemessa(Remessa remessa);
 
-    public Remessas getRemessa(int id);
+    public Remessa getRemessa(int id);
 
-    public Remessas getRemessa(String nome);
+    public Remessa getRemessa(String nome);
 
-    public ArrayList<Remessas> getRemessas();
+    public ArrayList<Remessa> getRemessas();
 
 }

@@ -1,20 +1,20 @@
 package br.com.xkinfo.slc.Service;
 
-import br.com.xkinfo.slc.Model.Tiposuc;
+import br.com.xkinfo.slc.Model.Tipouc;
 import java.util.ArrayList;
 
 public interface ITipoUCService {
 
-    public void inserirTipoUC(Tiposuc tipoUC);
+    public void inserirTipoUC(Tipouc tipoUC);
 
-    public void alterarTipoUC(Tiposuc tipoUC);
+    public void alterarTipoUC(Tipouc tipoUC);
 
-    public void deletarTipoUC(Tiposuc tipoUC);
+    public void deletarTipoUC(Tipouc tipoUC);
 
-    public Tiposuc getTipoUC(int id);
+    public Tipouc getTipoUC(int id);
 
-    public Tiposuc getTipoUC(String nome);
+    public Tipouc getTipoUC(String nome);
 
-    public ArrayList<Tiposuc> getTiposUC();
+    public ArrayList<Tipouc> getTiposUC();
 
 }

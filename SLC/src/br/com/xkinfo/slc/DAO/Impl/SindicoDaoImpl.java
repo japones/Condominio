@@ -1,7 +1,7 @@
 package br.com.xkinfo.slc.DAO.Impl;
 
 import br.com.xkinfo.slc.DAO.ISindicoDao;
-import br.com.xkinfo.slc.Model.Sindicos;
+import br.com.xkinfo.slc.Model.Sindico;
 import br.com.xkinfo.slc.Util.EntityManagerUtil;
 import java.util.ArrayList;
 import javax.persistence.EntityManager;
@@ -12,7 +12,7 @@ public class SindicoDaoImpl implements ISindicoDao {
     private final EntityManager entityManager = EntityManagerUtil.getEntityManager();
 
     @Override
-    public void inserirSindico(Sindicos sindico) throws Exception {
+    public void inserirSindico(Sindico sindico) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -26,7 +26,7 @@ public class SindicoDaoImpl implements ISindicoDao {
     }
 
     @Override
-    public void alterarSindico(Sindicos sindico) throws Exception {
+    public void alterarSindico(Sindico sindico) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -40,7 +40,7 @@ public class SindicoDaoImpl implements ISindicoDao {
     }
 
     @Override
-    public void deletarSindico(Sindicos sindico) throws Exception {
+    public void deletarSindico(Sindico sindico) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -54,17 +54,17 @@ public class SindicoDaoImpl implements ISindicoDao {
     }
 
     @Override
-    public Sindicos getSindico(int id) throws Exception {
+    public Sindico getSindico(int id) throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Sindicos getSindico(String nome) throws Exception {
+    public Sindico getSindico(String nome) throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public ArrayList<Sindicos> getSindicos() throws Exception {
+    public ArrayList<Sindico> getSindicos() throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

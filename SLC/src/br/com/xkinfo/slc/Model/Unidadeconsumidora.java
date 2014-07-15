@@ -17,15 +17,15 @@ public class Unidadeconsumidora  implements java.io.Serializable {
      private Integer nivelsuperior;
      private int numero;
      private Date dataultimaleitura;
-     private int usuarioinclusao;
+     private Usuario usuarioinclusao;
      private Date datainclusao;
-     private Integer usuarioalteracao;
+     private Usuario usuarioalteracao;
      private Date dataalteracao;
 
     public Unidadeconsumidora() {
     }
 	
-    public Unidadeconsumidora(int condominio, int tipouc, boolean ultimonovel, int numero, int usuarioinclusao, Date datainclusao) {
+    public Unidadeconsumidora(int condominio, int tipouc, boolean ultimonovel, int numero, Usuario usuarioinclusao, Date datainclusao) {
         this.condominio = condominio;
         this.tipouc = tipouc;
         this.ultimonovel = ultimonovel;
@@ -33,7 +33,7 @@ public class Unidadeconsumidora  implements java.io.Serializable {
         this.usuarioinclusao = usuarioinclusao;
     }
         
-    public Unidadeconsumidora(int condominio, int tipouc, boolean ultimonovel, Integer nivelsuperior, int numero, Date dataultimaleitura, int usuarioinclusao, Date datainclusao, Integer usuarioalteracao, Date dataalteracao) {
+    public Unidadeconsumidora(int condominio, int tipouc, boolean ultimonovel, Integer nivelsuperior, int numero, Date dataultimaleitura, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
        this.condominio = condominio;
        this.tipouc = tipouc;
        this.ultimonovel = ultimonovel;
@@ -102,11 +102,11 @@ public class Unidadeconsumidora  implements java.io.Serializable {
         this.dataultimaleitura = dataultimaleitura;
     }
     
-    public int getUsuarioinclusao() {
+    public Usuario getUsuarioinclusao() {
         return this.usuarioinclusao;
     }
     
-    public void setUsuarioinclusao(int usuarioinclusao) {
+    public void setUsuarioinclusao(Usuario usuarioinclusao) {
         this.usuarioinclusao = usuarioinclusao;
     }
     
@@ -118,11 +118,11 @@ public class Unidadeconsumidora  implements java.io.Serializable {
         this.datainclusao = datainclusao;
     }
     
-    public Integer getUsuarioalteracao() {
+    public Usuario getUsuarioalteracao() {
         return this.usuarioalteracao;
     }
     
-    public void setUsuarioalteracao(Integer usuarioalteracao) {
+    public void setUsuarioalteracao(Usuario usuarioalteracao) {
         this.usuarioalteracao = usuarioalteracao;
     }
     

@@ -1,7 +1,7 @@
 package br.com.xkinfo.slc.DAO.Impl;
 
 import br.com.xkinfo.slc.DAO.ITipoUCDao;
-import br.com.xkinfo.slc.Model.Tiposuc;
+import br.com.xkinfo.slc.Model.Tipouc;
 import br.com.xkinfo.slc.Util.EntityManagerUtil;
 import java.util.ArrayList;
 import javax.persistence.EntityManager;
@@ -12,7 +12,7 @@ public class TipoUCDaoImpl implements ITipoUCDao {
     private final EntityManager entityManager = EntityManagerUtil.getEntityManager();
 
     @Override
-    public void inserirTipoUC(Tiposuc tipoUC) throws Exception {
+    public void inserirTipoUC(Tipouc tipoUC) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -26,7 +26,7 @@ public class TipoUCDaoImpl implements ITipoUCDao {
     }
 
     @Override
-    public void alterarTipoUC(Tiposuc tipoUC) throws Exception {
+    public void alterarTipoUC(Tipouc tipoUC) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -40,7 +40,7 @@ public class TipoUCDaoImpl implements ITipoUCDao {
     }
 
     @Override
-    public void deletarTipoUC(Tiposuc tipoUC) throws Exception {
+    public void deletarTipoUC(Tipouc tipoUC) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -54,17 +54,17 @@ public class TipoUCDaoImpl implements ITipoUCDao {
     }
 
     @Override
-    public Tiposuc getTipoUC(int id) throws Exception {
+    public Tipouc getTipoUC(int id) throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Tiposuc getTipoUC(String nome) throws Exception {
+    public Tipouc getTipoUC(String nome) throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public ArrayList<Tiposuc> getTiposUC() throws Exception {
+    public ArrayList<Tipouc> getTiposUC() throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

@@ -16,15 +16,15 @@ public class Retorno  implements java.io.Serializable {
      private Date dataleitura;
      private int consumo;
      private float leitura;
-     private int usuarioinclusao;
+     private Usuario usuarioinclusao;
      private Date datainclusao;
-     private Integer usuarioalteracao;
+     private Usuario usuarioalteracao;
      private Date dataalteracao;
 
     public Retorno() {
     }
 	
-    public Retorno(int id, int ocorrencia, int remessa, Date dataleitura, int consumo, float leitura, int usuarioinclusao, Date datainclusao) {
+    public Retorno(int id, int ocorrencia, int remessa, Date dataleitura, int consumo, float leitura, Usuario usuarioinclusao, Date datainclusao) {
         this.id = id;
         this.ocorrencia = ocorrencia;
         this.remessa = remessa;
@@ -35,7 +35,7 @@ public class Retorno  implements java.io.Serializable {
         this.datainclusao = datainclusao;
     }
     
-    public Retorno(int id, int ocorrencia, int remessa, Date dataleitura, int consumo, float leitura, int usuarioinclusao, Date datainclusao, Integer usuarioalteracao, Date dataalteracao) {
+    public Retorno(int id, int ocorrencia, int remessa, Date dataleitura, int consumo, float leitura, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
        this.id = id;
        this.ocorrencia = ocorrencia;
        this.remessa = remessa;
@@ -96,11 +96,11 @@ public class Retorno  implements java.io.Serializable {
         this.leitura = leitura;
     }
     
-    public int getUsuarioinclusao() {
+    public Usuario getUsuarioinclusao() {
         return this.usuarioinclusao;
     }
     
-    public void setUsuarioinclusao(int usuarioinclusao) {
+    public void setUsuarioinclusao(Usuario usuarioinclusao) {
         this.usuarioinclusao = usuarioinclusao;
     }
     
@@ -112,11 +112,11 @@ public class Retorno  implements java.io.Serializable {
         this.datainclusao = datainclusao;
     }
     
-    public Integer getUsuarioalteracao() {
+    public Usuario getUsuarioalteracao() {
         return this.usuarioalteracao;
     }
     
-    public void setUsuarioalteracao(Integer usuarioalteracao) {
+    public void setUsuarioalteracao(Usuario usuarioalteracao) {
         this.usuarioalteracao = usuarioalteracao;
     }
     

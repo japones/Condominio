@@ -1,7 +1,7 @@
 package br.com.xkinfo.slc.DAO.Impl;
 
 import br.com.xkinfo.slc.DAO.IRemessaDao;
-import br.com.xkinfo.slc.Model.Remessas;
+import br.com.xkinfo.slc.Model.Remessa;
 import br.com.xkinfo.slc.Util.EntityManagerUtil;
 import java.util.ArrayList;
 import javax.persistence.EntityManager;
@@ -12,7 +12,7 @@ public class RemessaDaoImpl implements IRemessaDao {
     private final EntityManager entityManager = EntityManagerUtil.getEntityManager();
 
     @Override
-    public void inserirRemessa(Remessas remessa) throws Exception {
+    public void inserirRemessa(Remessa remessa) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -26,7 +26,7 @@ public class RemessaDaoImpl implements IRemessaDao {
     }
 
     @Override
-    public void alterarRemessa(Remessas remessa) throws Exception {
+    public void alterarRemessa(Remessa remessa) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -40,7 +40,7 @@ public class RemessaDaoImpl implements IRemessaDao {
     }
 
     @Override
-    public void deletarRemessa(Remessas remessa) throws Exception {
+    public void deletarRemessa(Remessa remessa) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -54,17 +54,17 @@ public class RemessaDaoImpl implements IRemessaDao {
     }
 
     @Override
-    public Remessas getRemessa(int id) throws Exception {
+    public Remessa getRemessa(int id) throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Remessas getRemessa(String nome) throws Exception {
+    public Remessa getRemessa(String nome) throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public ArrayList<Remessas> getRemessas() throws Exception {
+    public ArrayList<Remessa> getRemessas() throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

@@ -1,7 +1,7 @@
 package br.com.xkinfo.slc.DAO.Impl;
 
 import br.com.xkinfo.slc.DAO.IOcorrenciaDao;
-import br.com.xkinfo.slc.Model.Ocorrencias;
+import br.com.xkinfo.slc.Model.Ocorrencia;
 import br.com.xkinfo.slc.Util.EntityManagerUtil;
 import java.util.ArrayList;
 import javax.persistence.EntityManager;
@@ -12,7 +12,7 @@ public class OcorrenciaDaoImpl implements IOcorrenciaDao {
     private final EntityManager entityManager = EntityManagerUtil.getEntityManager();
 
     @Override
-    public void inserirOcorrencia(Ocorrencias ocorrencia) throws Exception {
+    public void inserirOcorrencia(Ocorrencia ocorrencia) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -26,7 +26,7 @@ public class OcorrenciaDaoImpl implements IOcorrenciaDao {
     }
 
     @Override
-    public void alterarOcorrencia(Ocorrencias ocorrencia) throws Exception {
+    public void alterarOcorrencia(Ocorrencia ocorrencia) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -40,7 +40,7 @@ public class OcorrenciaDaoImpl implements IOcorrenciaDao {
     }
 
     @Override
-    public void deletarOcorrencia(Ocorrencias ocorrencia) throws Exception {
+    public void deletarOcorrencia(Ocorrencia ocorrencia) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -54,17 +54,17 @@ public class OcorrenciaDaoImpl implements IOcorrenciaDao {
     }
 
     @Override
-    public Ocorrencias getOcorrencia(int id) throws Exception {
+    public Ocorrencia getOcorrencia(int id) throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Ocorrencias getOcorrencia(String nome) throws Exception {
+    public Ocorrencia getOcorrencia(String nome) throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public ArrayList<Ocorrencias> getOcorrencias() throws Exception {
+    public ArrayList<Ocorrencia> getOcorrencias() throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
