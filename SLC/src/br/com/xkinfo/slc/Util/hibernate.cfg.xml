@@ -22,5 +22,7 @@
     <mapping resource="br/com/xkinfo/slc/Model/UnidadeConsumidora.hbm.xml"/>
     <mapping resource="br/com/xkinfo/slc/Model/Ocorrencias.hbm.xml"/>
     <mapping resource="br/com/xkinfo/slc/Model/Medidoresucs.hbm.xml"/>
+    <mapping resource="br/com/xkinfo/slc/Model/Unidadeconsumidora.hbm.xml"/>
+    <mapping resource="br/com/xkinfo/slc/Model/Tipomedidor.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>
