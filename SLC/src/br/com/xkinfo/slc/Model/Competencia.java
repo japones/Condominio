@@ -11,8 +11,8 @@ public class Competencia  implements java.io.Serializable {
 
 
      private Integer id;
-     private int condominio;
-     private Date competencia;
+     private Condominio condominio;
+     private Competencia competencia;
      private boolean situacao;
      private Usuario usuarioinclusao;
      private Date datainclusao;
@@ -22,7 +22,7 @@ public class Competencia  implements java.io.Serializable {
     public Competencia() {
     }
 	
-    public Competencia(int condominio, Date competencia, boolean situacao, Usuario usuarioinclusao, Date datainclusao) {
+    public Competencia(Condominio condominio, Competencia competencia, boolean situacao, Usuario usuarioinclusao, Date datainclusao) {
         this.condominio = condominio;
         this.competencia = competencia;
         this.situacao = situacao;
@@ -30,7 +30,7 @@ public class Competencia  implements java.io.Serializable {
         this.datainclusao = datainclusao;
     }
 
-    public Competencia(int condominio, Date competencia, boolean situacao, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
+    public Competencia(Condominio condominio, Competencia competencia, boolean situacao, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
        this.condominio = condominio;
        this.competencia = competencia;
        this.situacao = situacao;
@@ -48,19 +48,19 @@ public class Competencia  implements java.io.Serializable {
         this.id = id;
     }
 
-    public int getCondominio() {
+    public Condominio getCondominio() {
         return this.condominio;
     }
     
-    public void setCondominio(int condominio) {
+    public void setCondominio(Condominio condominio) {
         this.condominio = condominio;
     }
 
-    public Date getCompetencia() {
+    public Competencia getCompetencia() {
         return this.competencia;
     }
     
-    public void setCompetencia(Date competencia) {
+    public void setCompetencia(Competencia competencia) {
         this.competencia = competencia;
     }
 
