@@ -12,7 +12,7 @@ public class Medidor  implements java.io.Serializable {
 
      private Integer id;
      private Condominio condominio;
-     private int tipomedidor;
+     private TipoMedidor tipomedidor;
      private String numeroserie;
      private Date dataaquisicao;
      private Usuario usuarioinclusao;
@@ -23,7 +23,7 @@ public class Medidor  implements java.io.Serializable {
     public Medidor() {
     }
 
-    public Medidor(Condominio condominio, int tipomedidor, String numeroserie, Date dataaquisicao, Usuario usuarioinclusao, Date datainclusao) {
+    public Medidor(Condominio condominio, TipoMedidor tipomedidor, String numeroserie, Date dataaquisicao, Usuario usuarioinclusao, Date datainclusao) {
         this.condominio = condominio;
         this.tipomedidor = tipomedidor;
         this.numeroserie = numeroserie;
@@ -32,7 +32,7 @@ public class Medidor  implements java.io.Serializable {
         this.datainclusao = datainclusao;
     }
 
-    public Medidor(Condominio condominio, int tipomedidor, String numeroserie, Date dataaquisicao, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
+    public Medidor(Condominio condominio, TipoMedidor tipomedidor, String numeroserie, Date dataaquisicao, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
        this.condominio = condominio;
        this.tipomedidor = tipomedidor;
        this.numeroserie = numeroserie;
@@ -59,11 +59,11 @@ public class Medidor  implements java.io.Serializable {
         this.condominio = condominio;
     }
     
-    public int getTipomedidor() {
+    public TipoMedidor getTipomedidor() {
         return this.tipomedidor;
     }
     
-    public void setTipomedidor(int tipomedidor) {
+    public void setTipomedidor(TipoMedidor tipomedidor) {
         this.tipomedidor = tipomedidor;
     }
     

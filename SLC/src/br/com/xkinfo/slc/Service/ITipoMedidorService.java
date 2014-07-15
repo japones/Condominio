@@ -1,20 +1,20 @@
 package br.com.xkinfo.slc.Service;
 
-import br.com.xkinfo.slc.Model.Tipomedidor;
+import br.com.xkinfo.slc.Model.TipoMedidor;
 import java.util.ArrayList;
 
 public interface ITipoMedidorService {
 
-    public void inserirTipoMedidor(Tipomedidor tipoMedidor);
+    public void inserirTipoMedidor(TipoMedidor tipoMedidor);
 
-    public void alterarTipoMedidor(Tipomedidor tipoMedidor);
+    public void alterarTipoMedidor(TipoMedidor tipoMedidor);
 
-    public void deletarTipoMedidor(Tipomedidor tipoMedidor);
+    public void deletarTipoMedidor(TipoMedidor tipoMedidor);
 
-    public Tipomedidor getTipoMedidor(int id);
+    public TipoMedidor getTipoMedidor(int id);
 
-    public Tipomedidor getTipoMedidor(String nome);
+    public TipoMedidor getTipoMedidor(String nome);
 
-    public ArrayList<Tipomedidor> getTipoMedidores();
+    public ArrayList<TipoMedidor> getTipoMedidores();
 
 }
