@@ -11,7 +11,7 @@ public class Abastecimento  implements java.io.Serializable {
 
 
      private Integer id;
-     private int competencia;
+     private Competencia competencia;
      private Date dataabastecimento;
      private float quantidade;
      private Usuario usuarioinclusao;
@@ -22,7 +22,7 @@ public class Abastecimento  implements java.io.Serializable {
     public Abastecimento() {
     }
 	
-    public Abastecimento(int competencia, Date dataabastecimento, float quantidade, Usuario usuarioinclusao, Date datainclusao) {
+    public Abastecimento(Competencia competencia, Date dataabastecimento, float quantidade, Usuario usuarioinclusao, Date datainclusao) {
         this.competencia = competencia;
         this.dataabastecimento = dataabastecimento;
         this.quantidade = quantidade;
@@ -30,7 +30,7 @@ public class Abastecimento  implements java.io.Serializable {
         this.datainclusao = datainclusao;
     }
 
-    public Abastecimento(int competencia, Date dataabastecimento, float quantidade, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
+    public Abastecimento(Competencia competencia, Date dataabastecimento, float quantidade, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
        this.competencia = competencia;
        this.dataabastecimento = dataabastecimento;
        this.quantidade = quantidade;
@@ -48,11 +48,11 @@ public class Abastecimento  implements java.io.Serializable {
         this.id = id;
     }
 
-    public int getCompetencia() {
+    public Competencia getCompetencia() {
         return this.competencia;
     }
     
-    public void setCompetencia(int competencia) {
+    public void setCompetencia(Competencia competencia) {
         this.competencia = competencia;
     }
 

@@ -12,7 +12,7 @@ public class Leitura  implements java.io.Serializable {
 
      private Integer id;
      private int unidadeconsumidora;
-     private int competencia;
+     private Competencia competencia;
      private Date dataleitura;
      private float remessas;
      private Float consumo;
@@ -24,7 +24,7 @@ public class Leitura  implements java.io.Serializable {
     public Leitura() {
     }
 	
-    public Leitura(int unidadeconsumidora, int competencia, Date dataleitura, float remessas, Usuario usuarioinclusao, Date datainclusao) {
+    public Leitura(int unidadeconsumidora, Competencia competencia, Date dataleitura, float remessas, Usuario usuarioinclusao, Date datainclusao) {
         this.unidadeconsumidora = unidadeconsumidora;
         this.competencia = competencia;
         this.dataleitura = dataleitura;
@@ -33,7 +33,7 @@ public class Leitura  implements java.io.Serializable {
         this.datainclusao = datainclusao;
     }
 
-    public Leitura(int unidadeconsumidora, int competencia, Date dataleitura, float remessas, Float consumo, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
+    public Leitura(int unidadeconsumidora, Competencia competencia, Date dataleitura, float remessas, Float consumo, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
        this.unidadeconsumidora = unidadeconsumidora;
        this.competencia = competencia;
        this.dataleitura = dataleitura;
@@ -61,11 +61,11 @@ public class Leitura  implements java.io.Serializable {
         this.unidadeconsumidora = unidadeconsumidora;
     }
 
-    public int getCompetencia() {
+    public Competencia getCompetencia() {
         return this.competencia;
     }
     
-    public void setCompetencia(int competencia) {
+    public void setCompetencia(Competencia competencia) {
         this.competencia = competencia;
     }
 
