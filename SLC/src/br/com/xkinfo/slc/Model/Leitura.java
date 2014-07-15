@@ -11,7 +11,7 @@ public class Leitura  implements java.io.Serializable {
 
 
      private Integer id;
-     private int unidadeconsumidora;
+     private UnidadeConsumidora unidadeconsumidora;
      private Competencia competencia;
      private Date dataleitura;
      private float remessas;
@@ -24,7 +24,7 @@ public class Leitura  implements java.io.Serializable {
     public Leitura() {
     }
 	
-    public Leitura(int unidadeconsumidora, Competencia competencia, Date dataleitura, float remessas, Usuario usuarioinclusao, Date datainclusao) {
+    public Leitura(UnidadeConsumidora unidadeconsumidora, Competencia competencia, Date dataleitura, float remessas, Usuario usuarioinclusao, Date datainclusao) {
         this.unidadeconsumidora = unidadeconsumidora;
         this.competencia = competencia;
         this.dataleitura = dataleitura;
@@ -33,7 +33,7 @@ public class Leitura  implements java.io.Serializable {
         this.datainclusao = datainclusao;
     }
 
-    public Leitura(int unidadeconsumidora, Competencia competencia, Date dataleitura, float remessas, Float consumo, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
+    public Leitura(UnidadeConsumidora unidadeconsumidora, Competencia competencia, Date dataleitura, float remessas, Float consumo, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
        this.unidadeconsumidora = unidadeconsumidora;
        this.competencia = competencia;
        this.dataleitura = dataleitura;
@@ -53,11 +53,11 @@ public class Leitura  implements java.io.Serializable {
         this.id = id;
     }
 
-    public int getUnidadeconsumidora() {
+    public UnidadeConsumidora getUnidadeconsumidora() {
         return this.unidadeconsumidora;
     }
     
-    public void setUnidadeconsumidora(int unidadeconsumidora) {
+    public void setUnidadeconsumidora(UnidadeConsumidora unidadeconsumidora) {
         this.unidadeconsumidora = unidadeconsumidora;
     }
 

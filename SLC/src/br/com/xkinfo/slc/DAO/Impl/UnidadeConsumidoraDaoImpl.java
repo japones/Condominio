@@ -1,7 +1,7 @@
 package br.com.xkinfo.slc.DAO.Impl;
 
 import br.com.xkinfo.slc.DAO.IUnidadeConsumidoraDao;
-import br.com.xkinfo.slc.Model.Unidadeconsumidora;
+import br.com.xkinfo.slc.Model.UnidadeConsumidora;
 import br.com.xkinfo.slc.Util.EntityManagerUtil;
 import java.util.ArrayList;
 import javax.persistence.EntityManager;
@@ -12,7 +12,7 @@ public class UnidadeConsumidoraDaoImpl implements IUnidadeConsumidoraDao {
     private final EntityManager entityManager = EntityManagerUtil.getEntityManager();
 
     @Override
-    public void inserirUnidadeConsumidora(Unidadeconsumidora unidadeConsumidora) throws Exception {
+    public void inserirUnidadeConsumidora(UnidadeConsumidora unidadeConsumidora) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -27,7 +27,7 @@ public class UnidadeConsumidoraDaoImpl implements IUnidadeConsumidoraDao {
     }
 
     @Override
-    public void alterarUnidadeConsumidora(Unidadeconsumidora unidadeConsumidora) throws Exception {
+    public void alterarUnidadeConsumidora(UnidadeConsumidora unidadeConsumidora) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -41,7 +41,7 @@ public class UnidadeConsumidoraDaoImpl implements IUnidadeConsumidoraDao {
     }
 
     @Override
-    public void deletarUnidadeConsumidora(Unidadeconsumidora unidadeConsumidora) throws Exception {
+    public void deletarUnidadeConsumidora(UnidadeConsumidora unidadeConsumidora) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -55,17 +55,17 @@ public class UnidadeConsumidoraDaoImpl implements IUnidadeConsumidoraDao {
     }
 
     @Override
-    public Unidadeconsumidora getUnidadeConsumidora(int id) throws Exception {
+    public UnidadeConsumidora getUnidadeConsumidora(int id) throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Unidadeconsumidora getUnidadeConsumidora(String nome) throws Exception {
+    public UnidadeConsumidora getUnidadeConsumidora(String nome) throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public ArrayList<Unidadeconsumidora> getUnidadesConsumidoras() throws Exception {
+    public ArrayList<UnidadeConsumidora> getUnidadesConsumidoras() throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

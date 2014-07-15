@@ -11,7 +11,7 @@ public class Remessa  implements java.io.Serializable {
 
 
      private Integer id;
-     private int unidadeconsumidora;
+     private UnidadeConsumidora unidadeconsumidora;
      private float remessasanterior;
      private Date dataleituraanterior;
      private int consumo;
@@ -23,7 +23,7 @@ public class Remessa  implements java.io.Serializable {
     public Remessa() {
     }
 	
-    public Remessa(int unidadeconsumidora, float remessasanterior, Date dataleituraanterior, int consumo, Usuario usuarioinclusao, Date datainclusao) {
+    public Remessa(UnidadeConsumidora unidadeconsumidora, float remessasanterior, Date dataleituraanterior, int consumo, Usuario usuarioinclusao, Date datainclusao) {
         this.unidadeconsumidora = unidadeconsumidora;
         this.remessasanterior = remessasanterior;
         this.dataleituraanterior = dataleituraanterior;
@@ -32,7 +32,7 @@ public class Remessa  implements java.io.Serializable {
         this.datainclusao = datainclusao;
     }
     
-    public Remessa(int unidadeconsumidora, float remessasanterior, Date dataleituraanterior, int consumo, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
+    public Remessa(UnidadeConsumidora unidadeconsumidora, float remessasanterior, Date dataleituraanterior, int consumo, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
        this.unidadeconsumidora = unidadeconsumidora;
        this.remessasanterior = remessasanterior;
        this.dataleituraanterior = dataleituraanterior;
@@ -51,11 +51,11 @@ public class Remessa  implements java.io.Serializable {
         this.id = id;
     }
     
-    public int getUnidadeconsumidora() {
+    public UnidadeConsumidora getUnidadeconsumidora() {
         return this.unidadeconsumidora;
     }
     
-    public void setUnidadeconsumidora(int unidadeconsumidora) {
+    public void setUnidadeconsumidora(UnidadeConsumidora unidadeconsumidora) {
         this.unidadeconsumidora = unidadeconsumidora;
     }
     
