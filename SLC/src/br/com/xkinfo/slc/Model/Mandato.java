@@ -11,7 +11,7 @@ public class Mandato  implements java.io.Serializable {
 
 
      private int id;
-     private int sindico;
+     private Sindico sindico;
      private int condominio;
      private Date mandatoinicio;
      private Date mandatofim;
@@ -23,7 +23,7 @@ public class Mandato  implements java.io.Serializable {
     public Mandato() {
     }
 
-    public Mandato(int id, int sindico, int condominio, Date mandatoinicio, Date mandatofim, Usuario usuarioinclusao, Date datainclusao) {
+    public Mandato(int id, Sindico sindico, int condominio, Date mandatoinicio, Date mandatofim, Usuario usuarioinclusao, Date datainclusao) {
         this.id = id;
         this.sindico = sindico;
         this.condominio = condominio;
@@ -33,7 +33,7 @@ public class Mandato  implements java.io.Serializable {
         this.datainclusao = datainclusao;
     }
     
-    public Mandato(int id, int sindico, int condominio, Date mandatoinicio, Date mandatofim, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
+    public Mandato(int id, Sindico sindico, int condominio, Date mandatoinicio, Date mandatofim, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
        this.id = id;
        this.sindico = sindico;
        this.condominio = condominio;
@@ -53,11 +53,11 @@ public class Mandato  implements java.io.Serializable {
         this.id = id;
     }
     
-    public int getSindico() {
+    public Sindico getSindico() {
         return this.sindico;
     }
     
-    public void setSindico(int sindico) {
+    public void setSindico(Sindico sindico) {
         this.sindico = sindico;
     }
     
