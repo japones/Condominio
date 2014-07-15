@@ -1,38 +1,38 @@
 package br.com.xkinfo.slc.Service.Impl;
 
-import br.com.xkinfo.slc.Model.Mandatos;
+import br.com.xkinfo.slc.Model.Mandato;
 import br.com.xkinfo.slc.Service.IMandatoService;
 import java.util.ArrayList;
 
 public class MandatoServiceImpl implements IMandatoService {
 
     @Override
-    public void inserirMandato(Mandatos mandato) {
+    public void inserirMandato(Mandato mandato) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void alterarMandato(Mandatos mandato) {
+    public void alterarMandato(Mandato mandato) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void deletarMandato(Mandatos mandato) {
+    public void deletarMandato(Mandato mandato) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Mandatos getMandato(int id) {
+    public Mandato getMandato(int id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Mandatos getMandato(String nome) {
+    public Mandato getMandato(String nome) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public ArrayList<Mandatos> getMandatos() {
+    public ArrayList<Mandato> getMandatos() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

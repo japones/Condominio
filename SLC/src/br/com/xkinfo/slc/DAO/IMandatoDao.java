@@ -1,19 +1,19 @@
 package br.com.xkinfo.slc.DAO;
 
-import br.com.xkinfo.slc.Model.Mandatos;
+import br.com.xkinfo.slc.Model.Mandato;
 import java.util.ArrayList;
 
 public interface IMandatoDao {
 
-    public void inserirMandato(Mandatos mandato)throws Exception;
+    public void inserirMandato(Mandato mandato)throws Exception;
 
-    public void alterarMandato(Mandatos mandato)throws Exception;
+    public void alterarMandato(Mandato mandato)throws Exception;
 
-    public void deletarMandato(Mandatos mandato)throws Exception;
+    public void deletarMandato(Mandato mandato)throws Exception;
 
-    public Mandatos getMandato(int id)throws Exception;
+    public Mandato getMandato(int id)throws Exception;
 
-    public Mandatos getMandato(String nome)throws Exception;
+    public Mandato getMandato(String nome)throws Exception;
 
-    public ArrayList<Mandatos> getMandatos()throws Exception;
+    public ArrayList<Mandato> getMandatos()throws Exception;
 }

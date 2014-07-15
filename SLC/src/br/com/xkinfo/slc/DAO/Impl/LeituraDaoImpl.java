@@ -1,7 +1,7 @@
 package br.com.xkinfo.slc.DAO.Impl;
 
 import br.com.xkinfo.slc.DAO.ILeituraDao;
-import br.com.xkinfo.slc.Model.Leituras;
+import br.com.xkinfo.slc.Model.Leitura;
 import br.com.xkinfo.slc.Util.EntityManagerUtil;
 import java.util.ArrayList;
 import javax.persistence.EntityManager;
@@ -12,7 +12,7 @@ public class LeituraDaoImpl implements ILeituraDao {
     private final EntityManager entityManager = EntityManagerUtil.getEntityManager();
 
     @Override
-    public void inserirLeitura(Leituras leitura) throws Exception {
+    public void inserirLeitura(Leitura leitura) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -26,7 +26,7 @@ public class LeituraDaoImpl implements ILeituraDao {
     }
 
     @Override
-    public void alterarLeitura(Leituras leitura) throws Exception {
+    public void alterarLeitura(Leitura leitura) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -40,7 +40,7 @@ public class LeituraDaoImpl implements ILeituraDao {
     }
 
     @Override
-    public void deletarLeitura(Leituras leitura) throws Exception {
+    public void deletarLeitura(Leitura leitura) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -54,17 +54,17 @@ public class LeituraDaoImpl implements ILeituraDao {
     }
 
     @Override
-    public Leituras getLeitura(int id) throws Exception {
+    public Leitura getLeitura(int id) throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Leituras getLeitura(String nome) throws Exception {
+    public Leitura getLeitura(String nome) throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public ArrayList<Leituras> getLeituras() throws Exception {
+    public ArrayList<Leitura> getLeituras() throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

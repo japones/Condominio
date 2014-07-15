@@ -17,7 +17,7 @@ public class Condominio  implements java.io.Serializable {
      private String email;
      private Usuario usuarioinclusao;
      private Date datainclusao;
-     private Integer usuarioalteracao;
+     private Usuario usuarioalteracao;
      private Date dataalteracao;
 
     public Condominio() {
@@ -31,7 +31,7 @@ public class Condominio  implements java.io.Serializable {
         this.datainclusao = datainclusao;
     }
 
-    public Condominio(String nome, String cnpj, String endereco, String email, Usuario usuarioinclusao, Date datainclusao, Integer usuarioalteracao, Date dataalteracao) {
+    public Condominio(String nome, String cnpj, String endereco, String email, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
        this.nome = nome;
        this.cnpj = cnpj;
        this.endereco = endereco;
@@ -98,11 +98,11 @@ public class Condominio  implements java.io.Serializable {
         this.datainclusao = datainclusao;
     }
 
-    public Integer getUsuarioalteracao() {
+    public Usuario getUsuarioalteracao() {
         return this.usuarioalteracao;
     }
     
-    public void setUsuarioalteracao(Integer usuarioalteracao) {
+    public void setUsuarioalteracao(Usuario usuarioalteracao) {
         this.usuarioalteracao = usuarioalteracao;
     }
 

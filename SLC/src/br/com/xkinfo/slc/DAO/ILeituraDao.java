@@ -1,19 +1,19 @@
 package br.com.xkinfo.slc.DAO;
 
-import br.com.xkinfo.slc.Model.Leituras;
+import br.com.xkinfo.slc.Model.Leitura;
 import java.util.ArrayList;
 
 public interface ILeituraDao {
 
-    public void inserirLeitura(Leituras leitura)throws Exception;
+    public void inserirLeitura(Leitura leitura)throws Exception;
 
-    public void alterarLeitura(Leituras leitura)throws Exception;
+    public void alterarLeitura(Leitura leitura)throws Exception;
 
-    public void deletarLeitura(Leituras leitura)throws Exception;
+    public void deletarLeitura(Leitura leitura)throws Exception;
 
-    public Leituras getLeitura(int id)throws Exception;
+    public Leitura getLeitura(int id)throws Exception;
 
-    public Leituras getLeitura(String nome)throws Exception;
+    public Leitura getLeitura(String nome)throws Exception;
 
-    public ArrayList<Leituras> getLeituras()throws Exception;
+    public ArrayList<Leitura> getLeituras()throws Exception;
 }

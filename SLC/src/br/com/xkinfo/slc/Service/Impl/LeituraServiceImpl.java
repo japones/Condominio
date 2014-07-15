@@ -1,38 +1,38 @@
 package br.com.xkinfo.slc.Service.Impl;
 
-import br.com.xkinfo.slc.Model.Leituras;
+import br.com.xkinfo.slc.Model.Leitura;
 import br.com.xkinfo.slc.Service.ILeituraService;
 import java.util.ArrayList;
 
 public class LeituraServiceImpl implements ILeituraService {
 
     @Override
-    public void inserirLeitura(Leituras leitura) {
+    public void inserirLeitura(Leitura leitura) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void alterarLeitura(Leituras leitura) {
+    public void alterarLeitura(Leitura leitura) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void deletarLeitura(Leituras leitura) {
+    public void deletarLeitura(Leitura leitura) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Leituras getLeitura(int id) {
+    public Leitura getLeitura(int id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Leituras getLeitura(String nome) {
+    public Leitura getLeitura(String nome) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public ArrayList<Leituras> getLeituras() {
+    public ArrayList<Leitura> getLeituras() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

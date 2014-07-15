@@ -1,38 +1,38 @@
 package br.com.xkinfo.slc.Service.Impl;
 
-import br.com.xkinfo.slc.Model.Medidores;
+import br.com.xkinfo.slc.Model.Medidor;
 import br.com.xkinfo.slc.Service.IMedidorService;
 import java.util.ArrayList;
 
 public class MedidorServiceImpl implements IMedidorService {
 
     @Override
-    public void inserirMedidor(Medidores medidor) {
+    public void inserirMedidor(Medidor medidor) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void alterarMedidor(Medidores medidor) {
+    public void alterarMedidor(Medidor medidor) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void deletarMedidor(Medidores medidor) {
+    public void deletarMedidor(Medidor medidor) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Medidores getMedidor(int id) {
+    public Medidor getMedidor(int id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Medidores getMedidor(String nome) {
+    public Medidor getMedidor(String nome) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public ArrayList<Medidores> getMedidores() {
+    public ArrayList<Medidor> getMedidores() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

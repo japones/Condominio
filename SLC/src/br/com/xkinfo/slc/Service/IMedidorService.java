@@ -1,20 +1,20 @@
 package br.com.xkinfo.slc.Service;
 
-import br.com.xkinfo.slc.Model.Medidores;
+import br.com.xkinfo.slc.Model.Medidor;
 import java.util.ArrayList;
 
 public interface IMedidorService {
 
-    public void inserirMedidor(Medidores medidor);
+    public void inserirMedidor(Medidor medidor);
 
-    public void alterarMedidor(Medidores medidor);
+    public void alterarMedidor(Medidor medidor);
 
-    public void deletarMedidor(Medidores medidor);
+    public void deletarMedidor(Medidor medidor);
 
-    public Medidores getMedidor(int id);
+    public Medidor getMedidor(int id);
 
-    public Medidores getMedidor(String nome);
+    public Medidor getMedidor(String nome);
 
-    public ArrayList<Medidores> getMedidores();
+    public ArrayList<Medidor> getMedidores();
 
 }

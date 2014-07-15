@@ -1,20 +1,20 @@
 package br.com.xkinfo.slc.Service;
 
-import br.com.xkinfo.slc.Model.Mandatos;
+import br.com.xkinfo.slc.Model.Mandato;
 import java.util.ArrayList;
 
 public interface IMandatoService {
 
-    public void inserirMandato(Mandatos mandato);
+    public void inserirMandato(Mandato mandato);
 
-    public void alterarMandato(Mandatos mandato);
+    public void alterarMandato(Mandato mandato);
 
-    public void deletarMandato(Mandatos mandato);
+    public void deletarMandato(Mandato mandato);
 
-    public Mandatos getMandato(int id);
+    public Mandato getMandato(int id);
 
-    public Mandatos getMandato(String nome);
+    public Mandato getMandato(String nome);
 
-    public ArrayList<Mandatos> getMandatos();
+    public ArrayList<Mandato> getMandatos();
 
 }

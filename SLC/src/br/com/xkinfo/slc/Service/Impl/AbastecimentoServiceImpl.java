@@ -1,38 +1,38 @@
 package br.com.xkinfo.slc.Service.Impl;
 
-import br.com.xkinfo.slc.Model.Abastecimentos;
+import br.com.xkinfo.slc.Model.Abastecimento;
 import br.com.xkinfo.slc.Service.IAbastecimentoService;
 import java.util.ArrayList;
 
 public class AbastecimentoServiceImpl implements IAbastecimentoService {
 
     @Override
-    public void inserirAbastecimento(Abastecimentos abastecimento) {
+    public void inserirAbastecimento(Abastecimento abastecimento) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void alterarAbastecimento(Abastecimentos abastecimento) {
+    public void alterarAbastecimento(Abastecimento abastecimento) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public void deletarAbastecimento(Abastecimentos abastecimento) {
+    public void deletarAbastecimento(Abastecimento abastecimento) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Abastecimentos getAbastecimento(int id) {
+    public Abastecimento getAbastecimento(int id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Abastecimentos getAbastecimento(String nome) {
+    public Abastecimento getAbastecimento(String nome) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public ArrayList<Abastecimentos> getAbastecimentos() {
+    public ArrayList<Abastecimento> getAbastecimentos() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

@@ -1,20 +1,20 @@
 package br.com.xkinfo.slc.Service;
 
-import br.com.xkinfo.slc.Model.Competencias;
+import br.com.xkinfo.slc.Model.Competencia;
 import java.util.ArrayList;
 
 public interface ICompetenciaService {
 
-    public void inserirCompetencia(Competencias competencia);
+    public void inserirCompetencia(Competencia competencia);
 
-    public void alterarCompetencia(Competencias competencia);
+    public void alterarCompetencia(Competencia competencia);
 
-    public void deletarCompetencia(Competencias competencia);
+    public void deletarCompetencia(Competencia competencia);
 
-    public Competencias getCompetencia(int id);
+    public Competencia getCompetencia(int id);
 
-    public Competencias getCompetencia(String nome);
+    public Competencia getCompetencia(String nome);
 
-    public ArrayList<Competencias> getCompetencias();
+    public ArrayList<Competencia> getCompetencias();
 
 }

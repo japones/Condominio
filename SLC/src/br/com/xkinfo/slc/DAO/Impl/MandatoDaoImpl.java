@@ -1,7 +1,7 @@
 package br.com.xkinfo.slc.DAO.Impl;
 
 import br.com.xkinfo.slc.DAO.IMandatoDao;
-import br.com.xkinfo.slc.Model.Mandatos;
+import br.com.xkinfo.slc.Model.Mandato;
 import br.com.xkinfo.slc.Util.EntityManagerUtil;
 import java.util.ArrayList;
 import javax.persistence.EntityManager;
@@ -12,7 +12,7 @@ public class MandatoDaoImpl implements IMandatoDao {
     private final EntityManager entityManager = EntityManagerUtil.getEntityManager();
 
     @Override
-    public void inserirMandato(Mandatos mandato) throws Exception {
+    public void inserirMandato(Mandato mandato) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -26,7 +26,7 @@ public class MandatoDaoImpl implements IMandatoDao {
     }
 
     @Override
-    public void alterarMandato(Mandatos mandato) throws Exception {
+    public void alterarMandato(Mandato mandato) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -40,7 +40,7 @@ public class MandatoDaoImpl implements IMandatoDao {
     }
 
     @Override
-    public void deletarMandato(Mandatos mandato) throws Exception {
+    public void deletarMandato(Mandato mandato) throws Exception {
         EntityTransaction tx = entityManager.getTransaction();
         try {
             tx.begin();
@@ -54,17 +54,17 @@ public class MandatoDaoImpl implements IMandatoDao {
     }
 
     @Override
-    public Mandatos getMandato(int id) throws Exception {
+    public Mandato getMandato(int id) throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public Mandatos getMandato(String nome) throws Exception {
+    public Mandato getMandato(String nome) throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public ArrayList<Mandatos> getMandatos() throws Exception {
+    public ArrayList<Mandato> getMandatos() throws Exception {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
