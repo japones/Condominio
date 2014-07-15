@@ -11,7 +11,7 @@ public class UnidadeConsumidora  implements java.io.Serializable {
 
 
      private Integer id;
-     private int condominio;
+     private Condominio condominio;
      private int tipouc;
      private boolean ultimonovel;
      private Integer nivelsuperior;
@@ -25,7 +25,7 @@ public class UnidadeConsumidora  implements java.io.Serializable {
     public UnidadeConsumidora() {
     }
 	
-    public UnidadeConsumidora(int condominio, int tipouc, boolean ultimonovel, int numero, Usuario usuarioinclusao, Date datainclusao) {
+    public UnidadeConsumidora(Condominio condominio, int tipouc, boolean ultimonovel, int numero, Usuario usuarioinclusao, Date datainclusao) {
         this.condominio = condominio;
         this.tipouc = tipouc;
         this.ultimonovel = ultimonovel;
@@ -33,7 +33,7 @@ public class UnidadeConsumidora  implements java.io.Serializable {
         this.usuarioinclusao = usuarioinclusao;
     }
         
-    public UnidadeConsumidora(int condominio, int tipouc, boolean ultimonovel, Integer nivelsuperior, int numero, Date dataultimaleitura, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
+    public UnidadeConsumidora(Condominio condominio, int tipouc, boolean ultimonovel, Integer nivelsuperior, int numero, Date dataultimaleitura, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
        this.condominio = condominio;
        this.tipouc = tipouc;
        this.ultimonovel = ultimonovel;
@@ -54,11 +54,11 @@ public class UnidadeConsumidora  implements java.io.Serializable {
         this.id = id;
     }
     
-    public int getCondominio() {
+    public Condominio getCondominio() {
         return this.condominio;
     }
     
-    public void setCondominio(int condominio) {
+    public void setCondominio(Condominio condominio) {
         this.condominio = condominio;
     }
     

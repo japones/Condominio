@@ -11,7 +11,7 @@ public class Medidor  implements java.io.Serializable {
 
 
      private Integer id;
-     private int condominio;
+     private Condominio condominio;
      private int tipomedidor;
      private String numeroserie;
      private Date dataaquisicao;
@@ -23,7 +23,7 @@ public class Medidor  implements java.io.Serializable {
     public Medidor() {
     }
 
-    public Medidor(int condominio, int tipomedidor, String numeroserie, Date dataaquisicao, Usuario usuarioinclusao, Date datainclusao) {
+    public Medidor(Condominio condominio, int tipomedidor, String numeroserie, Date dataaquisicao, Usuario usuarioinclusao, Date datainclusao) {
         this.condominio = condominio;
         this.tipomedidor = tipomedidor;
         this.numeroserie = numeroserie;
@@ -32,7 +32,7 @@ public class Medidor  implements java.io.Serializable {
         this.datainclusao = datainclusao;
     }
 
-    public Medidor(int condominio, int tipomedidor, String numeroserie, Date dataaquisicao, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
+    public Medidor(Condominio condominio, int tipomedidor, String numeroserie, Date dataaquisicao, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
        this.condominio = condominio;
        this.tipomedidor = tipomedidor;
        this.numeroserie = numeroserie;
@@ -51,11 +51,11 @@ public class Medidor  implements java.io.Serializable {
         this.id = id;
     }
     
-    public int getCondominio() {
+    public Condominio getCondominio() {
         return this.condominio;
     }
     
-    public void setCondominio(int condominio) {
+    public void setCondominio(Condominio condominio) {
         this.condominio = condominio;
     }
     
