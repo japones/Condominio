@@ -12,7 +12,7 @@ public class Medidoruc  implements java.io.Serializable {
 
      private Integer id;
      private UnidadeConsumidora unidadeconsumidora;
-     private int medidor;
+     private Medidor medidor;
      private Date datainstalacao;
      private Date dataretirada;
      private Usuario usuarioinclusao;
@@ -23,7 +23,7 @@ public class Medidoruc  implements java.io.Serializable {
     public Medidoruc() {
     }
 	
-    public Medidoruc(UnidadeConsumidora unidadeconsumidora, int medidor, Date datainstalacao, Usuario usuarioinclusao, Date datainclusao) {
+    public Medidoruc(UnidadeConsumidora unidadeconsumidora, Medidor medidor, Date datainstalacao, Usuario usuarioinclusao, Date datainclusao) {
         this.unidadeconsumidora = unidadeconsumidora;
         this.medidor = medidor;
         this.datainstalacao = datainstalacao;
@@ -31,7 +31,7 @@ public class Medidoruc  implements java.io.Serializable {
         this.datainclusao = datainclusao;
     }
     
-    public Medidoruc(UnidadeConsumidora unidadeconsumidora, int medidor, Date datainstalacao, Date dataretirada, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
+    public Medidoruc(UnidadeConsumidora unidadeconsumidora, Medidor medidor, Date datainstalacao, Date dataretirada, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
        this.unidadeconsumidora = unidadeconsumidora;
        this.medidor = medidor;
        this.datainstalacao = datainstalacao;
@@ -58,11 +58,11 @@ public class Medidoruc  implements java.io.Serializable {
         this.unidadeconsumidora = unidadeconsumidora;
     }
     
-    public int getMedidor() {
+    public Medidor getMedidor() {
         return this.medidor;
     }
     
-    public void setMedidor(int medidor) {
+    public void setMedidor(Medidor medidor) {
         this.medidor = medidor;
     }
     
