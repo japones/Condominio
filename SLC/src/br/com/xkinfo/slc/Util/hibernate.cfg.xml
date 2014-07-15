@@ -19,7 +19,7 @@
     <mapping resource="br/com/xkinfo/slc/Model/Leituras.hbm.xml"/>
     <mapping resource="br/com/xkinfo/slc/Model/Sindicos.hbm.xml"/>
     <mapping resource="br/com/xkinfo/slc/Model/Tiposuc.hbm.xml"/>
-    <mapping resource="br/com/xkinfo/slc/Model/Unidadeconsumidora.hbm.xml"/>
+    <mapping resource="br/com/xkinfo/slc/Model/UnidadeConsumidora.hbm.xml"/>
     <mapping resource="br/com/xkinfo/slc/Model/Ocorrencias.hbm.xml"/>
     <mapping resource="br/com/xkinfo/slc/Model/Medidoresucs.hbm.xml"/>
   </session-factory>
