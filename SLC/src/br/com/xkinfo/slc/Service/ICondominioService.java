@@ -6,9 +6,9 @@ import java.util.ArrayList;
 
 public interface ICondominioService {
 
-    public void inserirCondominio(String nome, String cnpj, String endereco, String email, Usuario usuarioinclusao) throws Exception;
+    public void inserirCondominio(String nome, String cnpj, String endereco, String email, Usuario usuarioInclusao) throws Exception;
 
-    public void alterarCondominio(int id, String nome, String cnpj, String endereco, String email, Usuario usuarioalteracao) throws Exception;
+    public void alterarCondominio(int id, String nome, String cnpj, String endereco, String email, Usuario usuarioAlteracao) throws Exception;
 
     public void deletarCondominio(int id) throws Exception;
 

@@ -15,31 +15,31 @@ public class Condominio  implements java.io.Serializable {
      private String cnpj;
      private String endereco;
      private String email;
-     private Usuario usuarioinclusao;
-     private Date datainclusao;
-     private Usuario usuarioalteracao;
-     private Date dataalteracao;
+     private Usuario usuarioInclusao;
+     private Date dataInclusao;
+     private Usuario usuarioAlteracao;
+     private Date dataAlteracao;
 
     public Condominio() {
     }
 	
-    public Condominio(String nome, String cnpj, String endereco, Usuario usuarioinclusao, Date datainclusao) {
+    public Condominio(String nome, String cnpj, String endereco, Usuario usuarioInclusao, Date dataInclusao) {
         this.nome = nome;
         this.cnpj = cnpj;
         this.endereco = endereco;
-        this.usuarioinclusao = usuarioinclusao;
-        this.datainclusao = datainclusao;
+        this.usuarioInclusao = usuarioInclusao;
+        this.dataInclusao = dataInclusao;
     }
 
-    public Condominio(String nome, String cnpj, String endereco, String email, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
+    public Condominio(String nome, String cnpj, String endereco, String email, Usuario usuarioInclusao, Date dataInclusao, Usuario usuarioAlteracao, Date dataAlteracao) {
        this.nome = nome;
        this.cnpj = cnpj;
        this.endereco = endereco;
        this.email = email;
-       this.usuarioinclusao = usuarioinclusao;
-       this.datainclusao = datainclusao;
-       this.usuarioalteracao = usuarioalteracao;
-       this.dataalteracao = dataalteracao;
+       this.usuarioInclusao = usuarioInclusao;
+       this.dataInclusao = dataInclusao;
+       this.usuarioAlteracao = usuarioAlteracao;
+       this.dataAlteracao = dataAlteracao;
     }
    
     public Integer getId() {
@@ -83,35 +83,35 @@ public class Condominio  implements java.io.Serializable {
     }
 
     public Usuario getUsuarioinclusao() {
-        return this.usuarioinclusao;
+        return this.usuarioInclusao;
     }
     
     public void setUsuarioinclusao(Usuario usuarioinclusao) {
-        this.usuarioinclusao = usuarioinclusao;
+        this.usuarioInclusao = usuarioinclusao;
     }
 
     public Date getDatainclusao() {
-        return this.datainclusao;
+        return this.dataInclusao;
     }
     
-    public void setDatainclusao(Date datainclusao) {
-        this.datainclusao = datainclusao;
+    public void setDatainclusao(Date dataInclusao) {
+        this.dataInclusao = dataInclusao;
     }
 
     public Usuario getUsuarioalteracao() {
-        return this.usuarioalteracao;
+        return this.usuarioAlteracao;
     }
     
-    public void setUsuarioalteracao(Usuario usuarioalteracao) {
-        this.usuarioalteracao = usuarioalteracao;
+    public void setUsuarioalteracao(Usuario usuarioIlteracao) {
+        this.usuarioAlteracao = usuarioAlteracao;
     }
 
     public Date getDataalteracao() {
-        return this.dataalteracao;
+        return this.dataAlteracao;
     }
     
-    public void setDataalteracao(Date dataalteracao) {
-        this.dataalteracao = dataalteracao;
+    public void setDataalteracao(Date dataAlteracao) {
+        this.dataAlteracao = dataAlteracao;
     }
 
 }
