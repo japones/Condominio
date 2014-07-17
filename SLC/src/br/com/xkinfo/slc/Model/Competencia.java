@@ -12,7 +12,7 @@ public class Competencia  implements java.io.Serializable {
 
      private Integer id;
      private Condominio condominio;
-     private Competencia competencia;
+     private Date competencia;
      private boolean situacao;
      private Usuario usuarioinclusao;
      private Date datainclusao;
@@ -22,7 +22,7 @@ public class Competencia  implements java.io.Serializable {
     public Competencia() {
     }
 	
-    public Competencia(Condominio condominio, Competencia competencia, boolean situacao, Usuario usuarioinclusao, Date datainclusao) {
+    public Competencia(Condominio condominio, Date competencia, boolean situacao, Usuario usuarioinclusao, Date datainclusao) {
         this.condominio = condominio;
         this.competencia = competencia;
         this.situacao = situacao;
@@ -30,7 +30,7 @@ public class Competencia  implements java.io.Serializable {
         this.datainclusao = datainclusao;
     }
 
-    public Competencia(Condominio condominio, Competencia competencia, boolean situacao, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
+    public Competencia(Condominio condominio, Date competencia, boolean situacao, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
        this.condominio = condominio;
        this.competencia = competencia;
        this.situacao = situacao;
@@ -56,11 +56,11 @@ public class Competencia  implements java.io.Serializable {
         this.condominio = condominio;
     }
 
-    public Competencia getCompetencia() {
+    public Date getCompetencia() {
         return this.competencia;
     }
     
-    public void setCompetencia(Competencia competencia) {
+    public void setCompetencia(Date competencia) {
         this.competencia = competencia;
     }
 

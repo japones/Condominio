@@ -1,20 +1,23 @@
 package br.com.xkinfo.slc.Service;
 
 import br.com.xkinfo.slc.Model.Competencia;
+import br.com.xkinfo.slc.Model.Condominio;
+import br.com.xkinfo.slc.Model.Usuario;
 import java.util.ArrayList;
+import java.util.Date;
 
 public interface ICompetenciaService {
 
-    public void inserirCompetencia(Competencia competencia);
+    public void inserirCompetencia(Condominio condominio, Date competencia, boolean situacao, Usuario usuarioinclusao) throws Exception ;
 
-    public void alterarCompetencia(Competencia competencia);
+    public void alterarCompetencia(int id, Condominio condominio, Date competencia, boolean situacao, Usuario usuarioalteracao) throws Exception ;
 
-    public void deletarCompetencia(Competencia competencia);
+    public void deletarCompetencia(int id) throws Exception ;
 
-    public Competencia getCompetencia(int id);
+    public Competencia getCompetencia(int id) throws Exception ;
 
-    public Competencia getCompetencia(String nome);
+    public Competencia getCompetencia(String nome) throws Exception ;
 
-    public ArrayList<Competencia> getCompetencias();
+    public ArrayList<Competencia> getCompetencias() throws Exception ;
 
 }
