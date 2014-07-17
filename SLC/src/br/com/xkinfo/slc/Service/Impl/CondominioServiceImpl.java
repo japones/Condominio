@@ -9,7 +9,6 @@ import java.util.Date;
 import javax.swing.JOptionPane;
 
 public class CondominioServiceImpl implements ICondominioService {
-
    
     @Override
     public void inserirCondominio(String nome, String cnpj, String endereco, String email, Usuario usuarioinclusao) throws Exception {
@@ -57,10 +56,6 @@ public class CondominioServiceImpl implements ICondominioService {
             
         }
         
-        
-        
-        
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
