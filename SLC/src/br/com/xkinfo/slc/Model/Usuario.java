@@ -87,6 +87,7 @@ public class Usuario  implements java.io.Serializable {
     public void setDatainclusao(Date datainclusao) {
         this.datainclusao = datainclusao;
     }
+    
     public Usuario getUsuarioalteracao() {
         return this.usuarioalteracao;
     }
