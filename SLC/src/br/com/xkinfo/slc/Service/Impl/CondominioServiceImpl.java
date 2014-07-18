@@ -44,6 +44,7 @@ public class CondominioServiceImpl implements ICondominioService {
         condominio.setEmail(email);
         condominio.setUsuarioalteracao(usuarioAlteracao);
         condominio.setDataalteracao(dataAlteracao);
+        condominio.setId(id);
         
         if (nome.equals(null) || nome == "") {   // valida se o campo nome está preenchido;
             
@@ -52,7 +53,7 @@ public class CondominioServiceImpl implements ICondominioService {
         }else{                                  // se o campo estiver preenchido, vai gravar no banco;
             
             ServiceFactoryDAO.getCondominioDAO().alterarCondominio(condominio);
-            JOptionPane.showMessageDialog(null, "Registro incluído com sucesso!");
+            JOptionPane.showMessageDialog(null, "Registro alterado com sucesso!");
             
         }
         
