@@ -8,21 +8,21 @@
     <property name="hibernate.connection.username">slc</property>
     <property name="hibernate.connection.password">1234</property>
     <mapping resource="br/com/xkinfo/slc/Model/Tipomedidores.hbm.xml"/>
-    <mapping resource="br/com/xkinfo/slc/Model/Usuario.hbm.xml"/>
-    <mapping resource="br/com/xkinfo/slc/Model/Medidor.hbm.xml"/>
-    <mapping resource="br/com/xkinfo/slc/Model/Competencia.hbm.xml"/>
-    <mapping resource="br/com/xkinfo/slc/Model/Condominio.hbm.xml"/>
-    <mapping resource="br/com/xkinfo/slc/Model/Abastecimento.hbm.xml"/>
-    <mapping resource="br/com/xkinfo/slc/Model/Remessa.hbm.xml"/>
-    <mapping resource="br/com/xkinfo/slc/Model/Mandato.hbm.xml"/>
+    <mapping resource="br/com/xkinfo/slc/Model/Usuarios.hbm.xml"/>
+    <mapping resource="br/com/xkinfo/slc/Model/Medidores.hbm.xml"/>
+    <mapping resource="br/com/xkinfo/slc/Model/Competencias.hbm.xml"/>
+    <mapping resource="br/com/xkinfo/slc/Model/Condominios.hbm.xml"/>
+    <mapping resource="br/com/xkinfo/slc/Model/Abastecimentos.hbm.xml"/>
+    <mapping resource="br/com/xkinfo/slc/Model/Remessas.hbm.xml"/>
+    <mapping resource="br/com/xkinfo/slc/Model/Mandatos.hbm.xml"/>
     <mapping resource="br/com/xkinfo/slc/Model/Retorno.hbm.xml"/>
-    <mapping resource="br/com/xkinfo/slc/Model/Leitura.hbm.xml"/>
-    <mapping resource="br/com/xkinfo/slc/Model/Sindico.hbm.xml"/>
-    <mapping resource="br/com/xkinfo/slc/Model/Tipouc.hbm.xml"/>
+    <mapping resource="br/com/xkinfo/slc/Model/Leituras.hbm.xml"/>
+    <mapping resource="br/com/xkinfo/slc/Model/Sindicos.hbm.xml"/>
+    <mapping resource="br/com/xkinfo/slc/Model/Tiposuc.hbm.xml"/>
     <mapping resource="br/com/xkinfo/slc/Model/UnidadeConsumidora.hbm.xml"/>
-    <mapping resource="br/com/xkinfo/slc/Model/Ocorrencia.hbm.xml"/>
-    <mapping resource="br/com/xkinfo/slc/Model/Medidoruc.hbm.xml"/>
-    <mapping resource="br/com/xkinfo/slc/Model/UnidadeConsumidora.hbm.xml"/>
-    <mapping resource="br/com/xkinfo/slc/Model/TipoMedidor.hbm.xml"/>
+    <mapping resource="br/com/xkinfo/slc/Model/Ocorrencias.hbm.xml"/>
+    <mapping resource="br/com/xkinfo/slc/Model/Medidoresucs.hbm.xml"/>
+    <mapping resource="br/com/xkinfo/slc/Model/Unidadeconsumidora.hbm.xml"/>
+    <mapping resource="br/com/xkinfo/slc/Model/Tipomedidor.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>
