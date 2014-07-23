@@ -11,6 +11,7 @@ public class ServiceFactoryDAO {
     private static ICondominioDao condominioDAO;
     private static ICompetenciaDao competenciaDAO;
     private static IUsuarioDao usuarioDAO;
+    private static ITipoUCDao tipoUcDAO;
 
     public static IAbastecimentoDao getAbastecimentoDAO() {
         if (abastecimentoDAO == null) {
@@ -40,4 +41,11 @@ public class ServiceFactoryDAO {
         return usuarioDAO;
     }
 
+    public static ITipoUCDao getTipoUcDAO() {
+        if (tipoUcDAO == null) {
+            usuarioDAO = new UsuarioDaoImpl();
+        }
+        return tipoUcDAO;
+    }
+    
 }
