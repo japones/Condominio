@@ -30,7 +30,6 @@ public class TipoMedidor implements java.io.Serializable {
         this.datainclusao = datainclusao;
     }
     
-    
     public TipoMedidor(String descricao, Usuario usuarioinclusao, Date datainclusao, Usuario usuarioalteracao, Date dataalteracao) {
        this.descricao = descricao;
        this.usuarioinclusao = usuarioinclusao;
