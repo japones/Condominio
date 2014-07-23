@@ -87,9 +87,17 @@ public class CompetenciaServiceImpl implements ICompetenciaService {
 
     @Override
     public Competencia getCompetencia(String nome) throws Exception  {
-        Competencia comp;
+        Competencia comp = null;
         
-        comp = ServiceFactoryDAO.getCompetenciaDAO().getCompetencia(nome);
+        if (nome.length() < 3 ) {
+            
+            JOptionPane.showMessageDialog(null, "Favor preencher a pesquisa com 3 caracteres.");
+            
+        } else {
+            
+            comp = ServiceFactoryDAO.getCompetenciaDAO().getCompetencia(nome);
+            
+        }
         
         return comp;
         
